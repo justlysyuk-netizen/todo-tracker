@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-12T05:02:43Z",
+  "updated": "2026-11-12T05:02:45Z",
   "next_id": 3,
   "tasks": [
     {
@@ -132,7 +132,7 @@
       "steps": [
         {
           "text": "Разобрать API Fast Gen и Secret Voicer",
-          "done": false
+          "done": true
         },
         {
           "text": "Репозиторий и ключи",
@@ -164,7 +164,7 @@
         }
       ],
       "created": "2026-11-12T05:02:43Z",
-      "updated": "2026-11-12T05:02:43Z",
+      "updated": "2026-11-12T05:02:45Z",
       "started": "2026-11-12T05:02:43Z",
       "finished": null,
       "log": [
@@ -178,6 +178,18 @@
           "t": "2026-11-12T05:02:43Z",
           "type": "started",
           "text": "взял(а) в работу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-12T05:02:45Z",
+          "type": "step",
+          "text": "шаг 1/8 готов: Разобрать API Fast Gen и Secret Voicer",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-12T05:02:45Z",
+          "type": "note",
+          "text": "оба API асинхронные, ключ в X-API-Key; у озвучки есть время каждого слова и SRT",
           "by": "Claude"
         }
       ]
