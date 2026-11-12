@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-12T01:16:05Z",
+  "updated": "2026-11-12T01:16:07Z",
   "next_id": 2,
   "tasks": [
     {
@@ -32,11 +32,11 @@
         },
         {
           "text": "Скилл для обновлений",
-          "done": false
+          "done": true
         }
       ],
       "created": "2026-11-12T01:07:33Z",
-      "updated": "2026-11-12T01:16:05Z",
+      "updated": "2026-11-12T01:16:07Z",
       "started": "2026-11-12T01:07:33Z",
       "finished": null,
       "log": [
@@ -98,6 +98,18 @@
           "t": "2026-11-12T01:16:05Z",
           "type": "note",
           "text": "GitHub Pages включён",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-12T01:16:07Z",
+          "type": "step",
+          "text": "шаг 5/5 готов: Скилл для обновлений",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-12T01:16:07Z",
+          "type": "note",
+          "text": "скилл task-tracker создан",
           "by": "Claude"
         }
       ]
