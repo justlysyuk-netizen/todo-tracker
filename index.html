@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Трекер задач</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e8833a'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 11.5' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#171615; --bg2:#1d1c1a; --col:#232220; --card:#1b1a18; --card-h:#211f1d;
+  --line:#2f2d2a; --line2:#3a3834;
+  --tx:#ece9e3; --tx2:#b9b5ae; --mut:#87837c;
+  --orange:#e8833a; --orange-bg:rgba(232,131,58,.14); --orange-tx:#f2a35f;
+  --green:#4ade80; --red:#ef6b6b; --grey:#8b8780; --blue:#6ea8fe; --blue-bg:rgba(110,168,254,.13);
+  --chip:#2c2a27;
+  --r:10px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--tx);font:13px/1.45 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit;color:inherit}
+.hidden{display:none!important}
+.topline{height:4px;background:linear-gradient(90deg,#3d2a1c,#5a3c25 50%,#3d2a1c)}
+
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px max(16px,calc((100% - 1180px)/2));border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(23,22,21,.92);backdrop-filter:blur(8px);z-index:5}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.logo{width:22px;height:22px;flex:none}
+.brand b{font-size:14px;font-weight:650;white-space:nowrap}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border:1px solid var(--line2);border-radius:99px;color:var(--mut);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--green);flex:none;box-shadow:0 0 0 0 rgba(74,222,128,.6)}
+.pill.off .dot{background:var(--red)}
+.pill.pulse .dot{animation:pulse 1.2s ease-out}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(74,222,128,.7)}100%{box-shadow:0 0 0 9px rgba(74,222,128,0)}}
+.hright{display:flex;align-items:center;gap:8px}
+.tabs{display:flex;background:var(--col);border:1px solid var(--line);border-radius:8px;padding:2px}
+.tabs button{border:0;background:none;padding:5px 12px;border-radius:6px;color:var(--mut);cursor:pointer;font-weight:550;font-size:12px}
+.tabs button.on{background:var(--line2);color:var(--tx)}
+.ibtn{width:32px;height:32px;display:grid;place-items:center;border:1px solid var(--line);background:var(--col);border-radius:8px;cursor:pointer;color:var(--tx2)}
+.ibtn:hover{color:var(--tx);border-color:var(--line2)}
+.btn{border:1px solid var(--line2);background:var(--col);border-radius:8px;padding:6px 12px;cursor:pointer;font-weight:550;font-size:12px}
+.btn:hover{border-color:#4a4741}
+.btn.pri{background:var(--orange);border-color:var(--orange);color:#1b120a}
+.btn.pri:hover{filter:brightness(1.08)}
+.btn.danger{color:var(--red)}
+
+main{padding:16px max(16px,calc((100% - 1180px)/2)) 40px}
+.toolbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.inp,select.inp{background:var(--bg2);border:1px solid var(--line);border-radius:7px;padding:6px 10px;outline:none;font-size:12px}
+.inp:focus{border-color:#55514b}
+#q{width:220px}
+.stats{margin-left:auto;display:flex;gap:16px;color:var(--mut);font-size:11.5px;flex-wrap:wrap}
+.stats b{color:var(--tx);font-weight:650;margin-right:3px}
+
+h2.sec{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--tx2);font-weight:650;margin:4px 0 10px}
+.now{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px;margin-bottom:22px}
+.now .card{border-left:3px solid var(--orange);padding:12px 14px}
+.now .card .title{font-size:13px}
+.nowempty{color:var(--mut);font-size:12px;padding:14px;border:1px dashed var(--line2);border-radius:var(--r);max-width:360px}
+
+.board{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;align-items:start}
+.colm{background:var(--col);border:1px solid var(--line);border-radius:var(--r);padding:10px 8px;min-height:420px}
+.colh{display:flex;align-items:center;gap:7px;padding:2px 4px 10px;font-weight:650;font-size:12px}
+.colh .n{color:var(--mut);font-weight:500}
+.colh .dot{box-shadow:none}
+.cards{display:flex;flex-direction:column;gap:8px}
+.empty{color:var(--mut);text-align:center;font-size:11.5px;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:9px 10px;cursor:pointer;transition:border-color .15s,background .15s,transform .15s}
+.card:hover{border-color:var(--line2);background:var(--card-h)}
+.card.flash{animation:flash 1.6s ease-out}
+@keyframes flash{0%{box-shadow:0 0 0 2px var(--orange)}100%{box-shadow:0 0 0 2px transparent}}
+.meta{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-bottom:5px}
+.num{color:var(--mut);font-size:10.5px;font-variant-numeric:tabular-nums}
+.chip{font-size:10px;padding:1px 7px;border-radius:99px;background:var(--chip);color:var(--tx2);white-space:nowrap}
+.chip.who{background:var(--blue-bg);color:var(--blue)}
+.chip.who.claude{background:var(--orange-bg);color:var(--orange-tx)}
+.meta .since{margin-left:auto;color:var(--mut);font-size:10.5px}
+.title{font-weight:620;font-size:12px;line-height:1.35;margin-bottom:8px;word-break:break-word}
+.prow{display:flex;align-items:center;gap:8px}
+.bar{flex:1;height:4px;background:#2f2d2a;border-radius:9px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;border-radius:9px;background:var(--orange);transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.s-done .bar i{background:var(--green)}
+.s-blocked .bar i{background:var(--red)}
+.s-queue .bar i{background:var(--grey)}
+.pct{color:var(--mut);font-size:10px;font-variant-numeric:tabular-nums;min-width:28px;text-align:right}
+.foot{margin-top:7px;color:var(--mut);font-size:10.5px;display:flex;gap:6px;align-items:center}
+.last{margin-top:9px;font-size:11px;color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.last span{color:var(--tx)}
+
+/* history */
+.hday{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--tx2);font-weight:650;margin:18px 0 8px}
+.hday:first-child{margin-top:0}
+.hlist{background:var(--col);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.hrow{display:grid;grid-template-columns:48px 14px minmax(0,1fr);gap:10px;align-items:start;padding:9px 14px;border-top:1px solid var(--line);cursor:pointer}
+.hrow:first-child{border-top:0}
+.hrow:hover{background:var(--card-h)}
+.htime{color:var(--mut);font-variant-numeric:tabular-nums;font-size:11.5px}
+.hic{width:8px;height:8px;border-radius:50%;margin-top:5px;background:var(--grey)}
+.hic.created{background:var(--blue)} .hic.started{background:var(--orange)} .hic.step,.hic.progress{background:#e8b13a}
+.hic.done{background:var(--green)} .hic.blocked{background:var(--red)}
+.htxt{min-width:0}
+.htxt .tt{color:var(--tx2);font-size:11.5px}
+.htxt .tt b{color:var(--tx);font-weight:600}
+.htxt .ev{margin-top:1px}
+.more{display:block;margin:14px auto 0}
+
+/* dialogs */
+dialog{background:var(--bg2);color:var(--tx);border:1px solid var(--line2);border-radius:14px;padding:0;width:min(620px,calc(100% - 24px));max-height:calc(100% - 40px)}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+.dh{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:16px 18px 10px}
+.dh h3{margin:6px 0 0;font-size:16px;line-height:1.3}
+.db{padding:4px 18px 18px}
+.x{border:0;background:none;color:var(--mut);font-size:20px;cursor:pointer;line-height:1;padding:2px 4px}
+.x:hover{color:var(--tx)}
+.kv{display:flex;gap:18px;flex-wrap:wrap;color:var(--mut);font-size:11.5px;margin:10px 0 14px}
+.kv b{color:var(--tx2);font-weight:550}
+.lbl{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--tx2);font-weight:650;margin:16px 0 8px}
+.desc{color:var(--tx2);white-space:pre-wrap;margin:0 0 6px}
+.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.steps li{display:flex;gap:9px;align-items:flex-start;padding:5px 6px;border-radius:6px}
+.steps li.can{cursor:pointer}
+.steps li.can:hover{background:var(--col)}
+.cb{width:15px;height:15px;border:1.5px solid #5a5650;border-radius:4px;flex:none;margin-top:1px;display:grid;place-items:center}
+.steps li.ok .cb{background:var(--green);border-color:var(--green)}
+.steps li.ok .cb:after{content:"";width:7px;height:4px;border:2px solid #10220f;border-top:0;border-right:0;transform:rotate(-45deg) translate(1px,-1px)}
+.steps li.ok .st{color:var(--mut);text-decoration:line-through}
+.tl{list-style:none;margin:0;padding:0 0 0 4px;border-left:1px solid var(--line2)}
+.tl li{position:relative;padding:3px 0 9px 14px}
+.tl li:before{content:"";position:absolute;left:-4.5px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--grey)}
+.tl li.created:before{background:var(--blue)} .tl li.started:before{background:var(--orange)} .tl li.step:before,.tl li.progress:before{background:#e8b13a}
+.tl li.done:before{background:var(--green)} .tl li.blocked:before{background:var(--red)}
+.tl .when{color:var(--mut);font-size:11px;margin-right:6px;font-variant-numeric:tabular-nums}
+.stbtns{display:flex;gap:6px;flex-wrap:wrap}
+.stbtns button.on{border-color:var(--orange);color:var(--orange-tx)}
+.row{display:flex;gap:8px;margin-top:8px}
+.row .inp{flex:1}
+.hint{color:var(--mut);font-size:11.5px;margin-top:14px;padding:10px 12px;border:1px dashed var(--line2);border-radius:8px}
+.form{display:grid;gap:10px}
+.form label{display:grid;gap:4px;font-size:11.5px;color:var(--tx2)}
+.form .inp{width:100%;font-size:13px;padding:8px 10px}
+.form textarea.inp{min-height:90px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.dfoot{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}
+.small{font-size:11px;color:var(--mut)}
+.small a{color:var(--orange-tx)}
+
+#toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);background:#2a2825;border:1px solid var(--line2);padding:8px 14px;border-radius:9px;opacity:0;transition:.25s;pointer-events:none;z-index:50;font-size:12px}
+#toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@media (max-width:980px){.board{grid-template-columns:repeat(2,minmax(0,1fr))}.colm{min-height:0}}
+@media (max-width:640px){
+  .board{grid-template-columns:1fr}
+  .stats{margin-left:0;width:100%}
+  #q{flex:1;width:auto;min-width:140px}
+  .brand b{display:none}
+  .two{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="brand">
+    <svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#e8833a"/><path d="M9 16.5l4.5 4.5L23 11.5" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <b id="appTitle">Трекер задач</b>
+    <span class="pill" id="live"><i class="dot"></i><span id="liveText">подключаюсь…</span></span>
+  </div>
+  <div class="hright">
+    <button class="btn pri hidden" id="addBtn">+ Задача</button>
+    <div class="tabs"><button data-view="board" class="on">Доска</button><button data-view="history">История</button></div>
+    <button class="ibtn" id="setBtn" title="Настройки" aria-label="Настройки"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button>
+  </div>
+</header>
+
+<main>
+  <div class="toolbar">
+    <input class="inp" id="q" placeholder="Поиск по задачам…" autocomplete="off">
+    <select class="inp" id="fProject"><option value="">Все проекты</option></select>
+    <select class="inp" id="fWho"><option value="">Все</option></select>
+    <div class="stats" id="stats"></div>
+  </div>
+
+  <section id="boardView">
+    <h2 class="sec">Сейчас в работе</h2>
+    <div class="now" id="now"></div>
+    <h2 class="sec">Доска</h2>
+    <div class="board" id="board"></div>
+  </section>
+
+  <section id="historyView" class="hidden">
+    <div id="history"></div>
+  </section>
+</main>
+
+<dialog id="taskDlg"></dialog>
+<dialog id="newDlg"></dialog>
+<dialog id="setDlg"></dialog>
+<div id="toast"></div>
+
+<script>
+"use strict";
+/* ---------- настройки ---------- */
+const DATA_PATH = 'data/tasks.json';
+const STATUSES = [
+  {k:'in_progress', label:'В работе',      color:'var(--orange)'},
+  {k:'queue',       label:'Очередь',       color:'var(--grey)'},
+  {k:'blocked',     label:'Заблокировано', color:'var(--red)'},
+  {k:'done',        label:'Готово',        color:'var(--green)'},
+];
+const ST = Object.fromEntries(STATUSES.map(s=>[s.k,s]));
+
+const ls = {
+  get(k){ try{ return localStorage.getItem('tt.'+k) }catch(e){ return null } },
+  set(k,v){ try{ (v==null||v==='') ? localStorage.removeItem('tt.'+k) : localStorage.setItem('tt.'+k,v) }catch(e){} }
+};
+function detectRepo(){
+  const m = location.hostname.match(/^([^.]+)\.github\.io$/i);
+  if(!m) return {owner:'',repo:''};
+  const seg = location.pathname.split('/').filter(Boolean)[0];
+  return {owner:m[1], repo:(seg && !seg.includes('.')) ? seg : m[1]+'.github.io'};
+}
+const auto = detectRepo();
+const cfg = {
+  owner: ls.get('owner') || auto.owner,
+  repo:  ls.get('repo')  || auto.repo,
+  branch: ls.get('branch') || 'main',
+  token: ls.get('token') || '',
+  me:    ls.get('me') || 'Илья',
+  poll:  Math.max(5, +(ls.get('poll')||15)),
+};
+
+/* ---------- состояние ---------- */
+let data = null, raw = '', etag = null, source = '', online = false, lastOk = 0, apiPauseUntil = 0;
+let prevStamp = {};      // id -> updated, чтобы подсвечивать изменения
+let view = 'board', openId = null, histLimit = 150;
+
+/* ---------- утилиты ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => String(s??'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const nowIso = () => new Date().toISOString().replace(/\.\d{3}Z$/,'Z');
+function plural(n, f){ n=Math.abs(n)%100; const n1=n%10; if(n>10&&n<20) return f[2]; if(n1>1&&n1<5) return f[1]; if(n1===1) return f[0]; return f[2]; }
+function rel(iso){
+  if(!iso) return '';
+  const s = Math.max(0,(Date.now()-new Date(iso))/1000);
+  if(s<60) return 'только что';
+  const m=Math.floor(s/60); if(m<60) return `${m} ${plural(m,['минуту','минуты','минут'])} назад`;
+  const h=Math.floor(m/60); if(h<24) return `${h} ${plural(h,['час','часа','часов'])} назад`;
+  const d=Math.floor(h/24); if(d===1) return 'вчера';
+  if(d<30) return `${d} ${plural(d,['день','дня','дней'])} назад`;
+  return new Date(iso).toLocaleDateString('ru-RU',{day:'numeric',month:'short',year:'numeric'});
+}
+function dur(from, to){
+  if(!from) return '';
+  const s = Math.max(0,((to?new Date(to):Date.now())-new Date(from))/1000);
+  const m=Math.floor(s/60), h=Math.floor(m/60), d=Math.floor(h/24);
+  if(m<1) return '<1 мин';
+  if(h<1) return `${m} мин`;
+  if(d<1) return `${h} ч ${m%60} мин`;
+  return `${d} дн ${h%24} ч`;
+}
+const fmtTime = iso => new Date(iso).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'});
+const fmtFull = iso => iso ? new Date(iso).toLocaleString('ru-RU',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}) : '—';
+function dayLabel(iso){
+  const d=new Date(iso), t=new Date(); const k=x=>x.toDateString();
+  if(k(d)===k(t)) return 'Сегодня';
+  const y=new Date(t); y.setDate(t.getDate()-1); if(k(d)===k(y)) return 'Вчера';
+  return d.toLocaleDateString('ru-RU',{weekday:'long',day:'numeric',month:'long'});
+}
+function b64dec(s){ const b=atob(s.replace(/\s/g,'')); const u=new Uint8Array(b.length); for(let i=0;i<b.length;i++) u[i]=b.charCodeAt(i); return new TextDecoder().decode(u); }
+function b64enc(str){ const u=new TextEncoder().encode(str); let b=''; for(let i=0;i<u.length;i+=0x8000) b+=String.fromCharCode.apply(null,u.subarray(i,i+0x8000)); return btoa(b); }
+function toast(t){ const el=$('#toast'); el.textContent=t; el.classList.add('on'); clearTimeout(toast.h); toast.h=setTimeout(()=>el.classList.remove('on'),2200); }
+
+const steps = t => t.steps||[];
+const stepsDone = t => steps(t).filter(s=>s.done).length;
+function prog(t){
+  if(t.status==='done') return 100;
+  if(typeof t.progress==='number') return Math.max(0,Math.min(100,Math.round(t.progress)));
+  const n=steps(t).length; return n ? Math.round(stepsDone(t)/n*100) : 0;
+}
+const lastLog = t => (t.log&&t.log.length) ? t.log[t.log.length-1] : null;
+const whoClass = w => /claude/i.test(w||'') ? 'who claude' : 'who';
+
+/* ---------- загрузка данных ---------- */
+const apiUrl = () => `https://api.github.com/repos/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/contents/${DATA_PATH}`;
+function ghHeaders(extra){
+  const h = {'Accept':'application/vnd.github+json', ...extra};
+  if(cfg.token) h['Authorization'] = 'Bearer '+cfg.token;
+  return h;
+}
+async function fetchData(){
+  if(cfg.owner && cfg.repo && Date.now() > apiPauseUntil){
+    try{
+      const r = await fetch(apiUrl()+'?ref='+encodeURIComponent(cfg.branch), {headers:ghHeaders(etag?{'If-None-Match':etag}:{}), cache:'no-store'});
+      if(r.status===304){ setOnline(true,'api'); return; }
+      if(r.ok){
+        const j = await r.json();
+        etag = r.headers.get('ETag');
+        accept(b64dec(j.content), 'api');
+        return;
+      }
+      if(r.status===403 || r.status===429){
+        const reset = +r.headers.get('X-RateLimit-Reset');
+        apiPauseUntil = reset ? reset*1000 : Date.now()+10*60e3;
+      }
+    }catch(e){ /* сеть или CORS — пробуем копию на Pages */ }
+  }
+  try{
+    const r = await fetch(DATA_PATH+'?t='+Date.now(), {cache:'no-store'});
+    if(r.ok){ accept(await r.text(), 'pages'); return; }
+  }catch(e){}
+  setOnline(false);
+}
+function accept(text, src){
+  let d; try{ d = JSON.parse(text) }catch(e){ setOnline(false); return; }
+  setOnline(true, src);
+  if(text === raw) return;
+  raw = text; data = d;
+  render(true);
+}
+function setOnline(ok, src){
+  online = ok; if(src) source = src;
+  if(ok) lastOk = Date.now();
+  const pill = $('#live');
+  pill.classList.toggle('off', !ok);
+  pill.classList.remove('pulse'); void pill.offsetWidth; if(ok) pill.classList.add('pulse');
+  updateLive();
+}
+function updateLive(){
+  const t = $('#liveText');
+  if(!data){ t.textContent = online ? 'онлайн' : 'нет связи'; return; }
+  t.textContent = (online ? 'онлайн' : 'нет связи') + ' · изменено ' + rel(data.updated);
+  $('#live').title = online ? (source==='api' ? 'Живые данные из GitHub (обновление каждые '+cfg.poll+' с)' : 'Копия с GitHub Pages (может отставать на 1–2 мин)') : 'Не удалось загрузить данные';
+}
+
+let pollTimer;
+function schedule(){
+  clearTimeout(pollTimer);
+  const sec = document.hidden ? Math.max(60,cfg.poll) : cfg.poll;
+  pollTimer = setTimeout(async()=>{ await fetchData(); schedule(); }, sec*1000);
+}
+document.addEventListener('visibilitychange', ()=>{ if(!document.hidden){ fetchData(); } schedule(); });
+
+/* ---------- отрисовка ---------- */
+function filtered(){
+  if(!data) return [];
+  const q = $('#q').value.trim().toLowerCase(), p = $('#fProject').value, w = $('#fWho').value;
+  return (data.tasks||[]).filter(t=>{
+    if(p && t.project!==p) return false;
+    if(w && t.who!==w) return false;
+    if(q){
+      const hay = [t.title,t.project,t.who,t.desc,'#'+t.id,...(t.tags||[]),...steps(t).map(s=>s.text)].join(' ').toLowerCase();
+      if(!hay.includes(q)) return false;
+    }
+    return true;
+  });
+}
+function syncFilters(){
+  const all = data.tasks||[];
+  const fill = (sel, vals, first) => {
+    const cur = sel.value;
+    sel.innerHTML = `<option value="">${first}</option>` + vals.map(v=>`<option${v===cur?' selected':''}>${esc(v)}</option>`).join('');
+    if(cur && !vals.includes(cur)){ sel.insertAdjacentHTML('beforeend',`<option selected>${esc(cur)}</option>`); }
+  };
+  fill($('#fProject'), [...new Set(all.map(t=>t.project).filter(Boolean))].sort(), 'Все проекты');
+  fill($('#fWho'), [...new Set(all.map(t=>t.who).filter(Boolean))].sort(), 'Все');
+}
+function card(t, big){
+  const p = prog(t), n = steps(t).length, last = lastLog(t);
+  const chips = `<span class="chip ${whoClass(t.who)}">${esc(t.who||'—')}</span>` +
+    (t.project?`<span class="chip">${esc(t.project)}</span>`:'') +
+    (t.tags||[]).map(g=>`<span class="chip">${esc(g)}</span>`).join('');
+  const changed = prevStamp[t.id] && prevStamp[t.id] !== t.updated;
+  return `<div class="card s-${t.status}${changed?' flash':''}" data-id="${t.id}">
+    <div class="meta"><span class="num">#${t.id}</span>${chips}${big?`<span class="since">идёт ${dur(t.started||t.created)}</span>`:''}</div>
+    <div class="title">${esc(t.title)}</div>
+    <div class="prow"><div class="bar"><i style="width:${p}%"></i></div><span class="pct">${p}%</span></div>
+    ${big
+      ? `<div class="last">${esc(rel(last?last.t:t.updated))}: <span>${esc(last?last.text:'')}</span></div>`
+      : `<div class="foot">${n?`<span>☑ ${stepsDone(t)}/${n}</span>`:''}<span>${esc(rel(t.updated))}</span></div>`}
+  </div>`;
+}
+function render(fromData){
+  if(!data) return;
+  if(fromData){
+    document.title = (data.title||'Трекер задач');
+    $('#appTitle').textContent = data.title||'Трекер задач';
+    syncFilters();
+  }
+  const ts = filtered();
+  const by = k => ts.filter(t=>t.status===k);
+  const sorters = {
+    in_progress:(a,b)=>new Date(b.updated)-new Date(a.updated),
+    queue:(a,b)=>(a.order??a.id)-(b.order??b.id),
+    blocked:(a,b)=>new Date(b.updated)-new Date(a.updated),
+    done:(a,b)=>new Date(b.finished||b.updated)-new Date(a.finished||a.updated),
+  };
+  // статистика
+  const week = Date.now()-7*864e5;
+  const done = by('done');
+  $('#stats').innerHTML =
+    `<span><b>${by('in_progress').length}</b>в работе</span>`+
+    `<span><b>${by('queue').length}</b>в очереди</span>`+
+    `<span><b>${done.filter(t=>new Date(t.finished||t.updated)>week).length}</b>готово за 7 дней</span>`+
+    `<span><b>${done.length}</b>всего готово</span>`;
+  // сейчас в работе
+  const nowT = by('in_progress').sort(sorters.in_progress);
+  $('#now').innerHTML = nowT.length ? nowT.map(t=>card(t,true)).join('') : `<div class="nowempty">Сейчас ничего не в работе</div>`;
+  // доска
+  $('#board').innerHTML = STATUSES.map(s=>{
+    const list = by(s.k).sort(sorters[s.k]);
+    return `<div class="colm"><div class="colh"><i class="dot" style="background:${s.color}"></i>${s.label}<span class="n">${list.length}</span></div>
+      <div class="cards">${list.length?list.map(t=>card(t)).join(''):'<div class="empty">пусто</div>'}</div></div>`;
+  }).join('');
+  if(view==='history') renderHistory(ts);
+  if(fromData && openId!=null && $('#taskDlg').open) renderTask(openId);
+  prevStamp = Object.fromEntries((data.tasks||[]).map(t=>[t.id,t.updated]));
+  updateLive();
+}
+function renderHistory(ts){
+  ts = ts || filtered();
+  const ev = [];
+  ts.forEach(t=>(t.log||[]).forEach((e,i)=>ev.push({...e, task:t, i})));
+  ev.sort((a,b)=>(new Date(b.t)-new Date(a.t)) || (b.i-a.i) || (b.task.id-a.task.id));
+  if(!ev.length){ $('#history').innerHTML = '<div class="nowempty">История пока пуста</div>'; return; }
+  let html='', day='', open=false;
+  ev.slice(0,histLimit).forEach(e=>{
+    const d = dayLabel(e.t);
+    if(d!==day){ if(open) html+='</div>'; html+=`<div class="hday">${esc(d)}</div><div class="hlist">`; day=d; open=true; }
+    html += `<div class="hrow" data-id="${e.task.id}"><span class="htime">${fmtTime(e.t)}</span><i class="hic ${esc(e.type)}"></i>
+      <div class="htxt"><div class="tt">#${e.task.id} <b>${esc(e.task.title)}</b> · <span class="chip ${whoClass(e.by||e.task.who)}">${esc(e.by||e.task.who||'')}</span></div><div class="ev">${esc(e.text)}</div></div></div>`;
+  });
+  if(open) html+='</div>';
+  if(ev.length>histLimit) html += `<button class="btn more" id="moreBtn">Показать ещё (${ev.length-histLimit})</button>`;
+  $('#history').innerHTML = html;
+}
+
+/* ---------- карточка задачи ---------- */
+function renderTask(id){
+  const t = (data.tasks||[]).find(x=>x.id===id);
+  const dlg = $('#taskDlg');
+  if(!t){ dlg.close(); return; }
+  const can = !!cfg.token, p = prog(t);
+  const chips = `<span class="num">#${t.id}</span><span class="chip ${whoClass(t.who)}">${esc(t.who||'—')}</span>` +
+    (t.project?`<span class="chip">${esc(t.project)}</span>`:'') + (t.tags||[]).map(g=>`<span class="chip">${esc(g)}</span>`).join('');
+  const log = (t.log||[]).slice().reverse();
+  dlg.innerHTML = `
+  <div class="dh"><div><div class="meta">${chips}</div><h3>${esc(t.title)}</h3></div><button class="x" data-close>×</button></div>
+  <div class="db">
+    <div class="card s-${t.status}" style="cursor:default;background:none;border:0;padding:0">
+      <div class="prow"><div class="bar"><i style="width:${p}%"></i></div><span class="pct">${p}%</span></div></div>
+    <div class="kv"><span>Статус: <b>${ST[t.status]?.label||t.status}</b></span><span>Создана: <b>${fmtFull(t.created)}</b></span>
+      ${t.started?`<span>Начата: <b>${fmtFull(t.started)}</b></span>`:''}
+      ${t.finished?`<span>Готова: <b>${fmtFull(t.finished)}</b></span><span>Заняло: <b>${dur(t.started||t.created,t.finished)}</b></span>`
+        : (t.status==='in_progress'?`<span>Идёт: <b>${dur(t.started||t.created)}</b></span>`:'')}</div>
+    ${can?`<div class="stbtns">${STATUSES.map(s=>`<button class="btn${t.status===s.k?' on':''}" data-status="${s.k}">${s.label}</button>`).join('')}</div>`:''}
+    ${t.desc?`<div class="lbl">Описание</div><p class="desc">${esc(t.desc)}</p>`:''}
+    <div class="lbl">Шаги ${steps(t).length?`· ${stepsDone(t)}/${steps(t).length}`:''}</div>
+    ${steps(t).length?`<ul class="steps">${steps(t).map((s,i)=>`<li class="${s.done?'ok':''}${can?' can':''}" data-step="${i}"><span class="cb"></span><span class="st">${esc(s.text)}</span></li>`).join('')}</ul>`:'<div class="small">Шагов нет</div>'}
+    ${can?`<div class="row"><input class="inp" id="newStep" placeholder="Новый шаг…"><button class="btn" id="addStep">Добавить</button></div>`:''}
+    <div class="lbl">Ход работы</div>
+    ${can?`<div class="row" style="margin:0 0 10px"><input class="inp" id="newNote" placeholder="Заметка в историю…"><button class="btn" id="addNote">Записать</button></div>`:''}
+    ${log.length?`<ul class="tl">${log.map(e=>`<li class="${esc(e.type)}"><span class="when">${fmtFull(e.t)}</span>${e.by&&e.by!==t.who?`<span class="chip ${whoClass(e.by)}">${esc(e.by)}</span> `:''}${esc(e.text)}</li>`).join('')}</ul>`:'<div class="small">Записей нет</div>'}
+    ${can?`<div class="dfoot"><button class="btn danger" id="delTask">Удалить задачу</button></div>`
+         :`<div class="hint">Чтобы двигать задачи и отмечать шаги прямо здесь, добавьте GitHub‑токен в настройках (шестерёнка).</div>`}
+  </div>`;
+}
+function openTask(id){
+  openId = id; renderTask(id);
+  const dlg=$('#taskDlg'); if(!dlg.open) dlg.showModal();
+  if(location.hash!=='#task-'+id) history.replaceState(null,'','#task-'+id);
+}
+$('#taskDlg').addEventListener('close', ()=>{ openId=null; if(location.hash.startsWith('#task-')) history.replaceState(null,'',location.pathname+location.search+(view==='history'?'#history':'')); });
+
+/* ---------- запись через GitHub API (нужен токен) ---------- */
+let busy = false;
+async function mutate(fn, msg){
+  if(!cfg.token){ toast('Нужен токен в настройках'); return false; }
+  if(!cfg.owner||!cfg.repo){ toast('Укажите репозиторий в настройках'); return false; }
+  if(busy) return false; busy = true;
+  try{
+    for(let i=0;i<4;i++){
+      const g = await fetch(apiUrl()+'?ref='+encodeURIComponent(cfg.branch)+'&t='+Date.now(), {headers:ghHeaders(), cache:'no-store'});
+      if(!g.ok) throw new Error('Чтение: '+g.status);
+      const j = await g.json();
+      const d = JSON.parse(b64dec(j.content));
+      const m = fn(d); if(m===false) return false;
+      d.updated = nowIso();
+      const message = typeof msg==='function' ? msg() : msg;
+      const text = JSON.stringify(d,null,2)+'\n';
+      const r = await fetch(apiUrl(), {method:'PUT', headers:ghHeaders({'Content-Type':'application/json'}),
+        body:JSON.stringify({message, content:b64enc(text), sha:j.sha, branch:cfg.branch})});
+      if(r.ok){ etag=null; accept(text,'api'); toast('Сохранено'); return true; }
+      if(r.status===409||r.status===422){ await new Promise(res=>setTimeout(res,600*(i+1))); continue; }
+      throw new Error('Запись: '+r.status+(r.status===401||r.status===403?' (проверьте токен)':''));
+    }
+    throw new Error('конфликт версий, попробуйте ещё раз');
+  }catch(e){ toast('Не сохранилось: '+e.message); return false; }
+  finally{ busy=false; }
+}
+const addLog = (t,type,text) => { (t.log=t.log||[]).push({t:nowIso(), type, text, by:cfg.me}); t.updated = nowIso(); };
+const STATUS_EVENTS = {
+  in_progress:['started','взял(а) в работу','▶'], queue:['queued','вернул(а) в очередь','⏸'],
+  blocked:['blocked','заблокировано','⛔'], done:['done','готово','✅'],
+};
+function setStatus(id, k){
+  const ev = STATUS_EVENTS[k];
+  let reason = '';
+  if(k==='blocked'){ reason = prompt('Что мешает?')||''; }
+  mutate(d=>{
+    const t=d.tasks.find(x=>x.id===id); if(!t||t.status===k) return false;
+    if(t.status==='done' && k!=='done'){ t.finished=null; }
+    t.status=k;
+    if(k==='in_progress' && !t.started) t.started=nowIso();
+    if(k==='done'){ t.finished=nowIso(); delete t.progress; }
+    addLog(t, ev[0], ev[1]+(reason?': '+reason:''));
+  }, `[#${id}] ${ev[2]} ${ev[1]}`);
+}
+
+/* ---------- новая задача ---------- */
+function openNew(){
+  const projects=[...new Set((data?.tasks||[]).map(t=>t.project).filter(Boolean))];
+  const dlg=$('#newDlg');
+  dlg.innerHTML=`<div class="dh"><h3>Новая задача</h3><button class="x" data-close>×</button></div>
+  <form class="db form" id="newForm" method="dialog">
+    <label>Название<input class="inp" name="title" required placeholder="Например: смонтировать видео про сон"></label>
+    <div class="two">
+      <label>Кто делает<select class="inp" name="who"><option>${esc(cfg.me)}</option><option>Claude</option></select></label>
+      <label>Проект<input class="inp" name="project" list="plist" placeholder="наука, аудиокниги…"><datalist id="plist">${projects.map(p=>`<option>${esc(p)}</option>`).join('')}</datalist></label>
+    </div>
+    <div class="two">
+      <label>Теги (через запятую)<input class="inp" name="tags" placeholder="видео, монтаж"></label>
+      <label>Куда<select class="inp" name="status"><option value="queue">В очередь</option><option value="in_progress">Сразу в работу</option></select></label>
+    </div>
+    <label>Шаги (каждый с новой строки)<textarea class="inp" name="steps" placeholder="Сценарий&#10;Озвучка&#10;Картинки&#10;Монтаж&#10;Загрузка на YouTube"></textarea></label>
+    <label>Описание<textarea class="inp" name="desc" style="min-height:60px"></textarea></label>
+    <div class="dfoot"><button type="button" class="btn" data-close>Отмена</button><button class="btn pri" type="submit">Создать</button></div>
+  </form>`;
+  dlg.showModal();
+  dlg.querySelector('[name=title]').focus();
+  $('#newForm').addEventListener('submit', async ev=>{
+    ev.preventDefault();
+    const f = Object.fromEntries(new FormData(ev.target));
+    let newId;
+    const ok = await mutate(d=>{
+      d.next_id = Math.max(d.next_id||1, ...(d.tasks||[]).map(t=>t.id+1));
+      newId = d.next_id++;
+      const ts = nowIso();
+      const t = {id:newId, title:f.title.trim(), who:f.who, project:f.project.trim()||undefined,
+        tags:f.tags.split(',').map(s=>s.trim()).filter(Boolean),
+        status:f.status, steps:f.steps.split('\n').map(s=>s.trim()).filter(Boolean).map(text=>({text,done:false})),
+        desc:f.desc.trim()||undefined, created:ts, updated:ts, started:f.status==='in_progress'?ts:null, finished:null, log:[]};
+      addLog(t,'created','создал(а) задачу');
+      if(f.status==='in_progress') addLog(t,'started','взял(а) в работу');
+      (d.tasks=d.tasks||[]).push(JSON.parse(JSON.stringify(t)));
+    }, ()=>`[#${newId}] ➕ новая задача: ${f.title.trim()}`);
+    if(ok){ dlg.close(); }
+  });
+}
+
+/* ---------- настройки ---------- */
+function openSettings(){
+  const dlg=$('#setDlg');
+  dlg.innerHTML=`<div class="dh"><h3>Настройки</h3><button class="x" data-close>×</button></div>
+  <form class="db form" id="setForm">
+    <div class="two">
+      <label>Владелец репозитория (GitHub)<input class="inp" name="owner" value="${esc(cfg.owner)}" placeholder="username"></label>
+      <label>Репозиторий<input class="inp" name="repo" value="${esc(cfg.repo)}" placeholder="todo-tracker"></label>
+    </div>
+    <div class="two">
+      <label>Ветка<input class="inp" name="branch" value="${esc(cfg.branch)}"></label>
+      <label>Обновлять каждые, сек<input class="inp" name="poll" type="number" min="5" value="${cfg.poll}"></label>
+    </div>
+    <label>Ваше имя в задачах<input class="inp" name="me" value="${esc(cfg.me)}"></label>
+    <label>GitHub‑токен (только для редактирования с этой страницы)<input class="inp" name="token" type="password" value="${esc(cfg.token)}" placeholder="github_pat_…" autocomplete="off"></label>
+    <div class="small">Токен хранится только в этом браузере. Создайте его на
+      <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com → Fine‑grained token</a>:
+      доступ только к репозиторию трекера, право <b>Contents: Read and write</b>. Без токена страница работает только на просмотр.</div>
+    <div class="small">Источник данных сейчас: <b>${source==='api'?'GitHub API (живые данные)':source==='pages'?'копия на GitHub Pages':'—'}</b>${apiPauseUntil>Date.now()?` · лимит API исчерпан до ${fmtTime(new Date(apiPauseUntil).toISOString())}, добавьте токен`:''}</div>
+    <div class="dfoot"><button type="button" class="btn" data-close>Отмена</button><button class="btn pri" type="submit">Сохранить</button></div>
+  </form>`;
+  dlg.showModal();
+  $('#setForm').addEventListener('submit', ev=>{
+    ev.preventDefault();
+    const f = Object.fromEntries(new FormData(ev.target));
+    ['owner','repo','branch','me','token'].forEach(k=>{ cfg[k]=f[k].trim(); ls.set(k, (k==='owner'&&cfg[k]===auto.owner)||(k==='repo'&&cfg[k]===auto.repo)?'':cfg[k]); });
+    if(!cfg.branch) cfg.branch='main';
+    if(!cfg.me) cfg.me='Илья';
+    cfg.poll = Math.max(5, +f.poll||15); ls.set('poll', String(cfg.poll));
+    etag=null; apiPauseUntil=0; raw='';
+    applyAuthUi(); dlg.close(); toast('Сохранено'); fetchData(); schedule();
+  });
+}
+function applyAuthUi(){ $('#addBtn').classList.toggle('hidden', !cfg.token); }
+
+/* ---------- события ---------- */
+function setView(v){
+  view=v;
+  document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('on', b.dataset.view===v));
+  $('#boardView').classList.toggle('hidden', v!=='board');
+  $('#historyView').classList.toggle('hidden', v!=='history');
+  if(v==='history') renderHistory();
+  if(!location.hash.startsWith('#task-')) history.replaceState(null,'', v==='history'?'#history':location.pathname+location.search);
+}
+document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));
+['#q','#fProject','#fWho'].forEach(s=>$(s).addEventListener('input',()=>render()));
+$('#setBtn').addEventListener('click', openSettings);
+$('#addBtn').addEventListener('click', openNew);
+document.addEventListener('click', e=>{
+  if(e.target.closest('[data-close]')){ e.target.closest('dialog')?.close(); return; }
+  if(e.target.id==='moreBtn'){ histLimit+=300; renderHistory(); return; }
+  const c = e.target.closest('.card[data-id], .hrow[data-id]');
+  if(c && !e.target.closest('dialog')){ openTask(+c.dataset.id); return; }
+  const dlg = e.target.closest('#taskDlg'); if(!dlg || openId==null) return;
+  const id = openId;
+  const sb = e.target.closest('[data-status]'); if(sb){ setStatus(id, sb.dataset.status); return; }
+  const li = e.target.closest('.steps li.can');
+  if(li){
+    const i=+li.dataset.step;
+    mutate(d=>{
+      const t=d.tasks.find(x=>x.id===id); const s=t&&t.steps[i]; if(!s) return false;
+      s.done=!s.done; delete t.progress;
+      const n=t.steps.length, k=t.steps.filter(x=>x.done).length;
+      addLog(t, s.done?'step':'step_undone', s.done?`шаг ${i+1}/${n} готов: ${s.text}`:`шаг ${i+1} снова открыт: ${s.text}`);
+      if(s.done && t.status==='queue'){ t.status='in_progress'; t.started=t.started||nowIso(); }
+    }, `[#${id}] ☑ шаг ${i+1}`);
+    return;
+  }
+  if(e.target.id==='addStep'){
+    const v=$('#newStep').value.trim(); if(!v) return;
+    mutate(d=>{ const t=d.tasks.find(x=>x.id===id); (t.steps=t.steps||[]).push({text:v,done:false}); addLog(t,'step_added','добавлен шаг: '+v); }, `[#${id}] ➕ шаг: ${v}`);
+    return;
+  }
+  if(e.target.id==='addNote'){
+    const v=$('#newNote').value.trim(); if(!v) return;
+    mutate(d=>{ const t=d.tasks.find(x=>x.id===id); addLog(t,'note',v); }, `[#${id}] 📝 ${v}`);
+    return;
+  }
+  if(e.target.id==='delTask'){
+    if(!confirm('Удалить задачу #'+id+' насовсем?')) return;
+    mutate(d=>{ d.tasks=d.tasks.filter(x=>x.id!==id); }, `[#${id}] 🗑 задача удалена`).then(ok=>{ if(ok) $('#taskDlg').close(); });
+  }
+});
+document.addEventListener('keydown', e=>{
+  if(e.target.matches('input,textarea,select')){
+    if(e.key==='Enter' && (e.target.id==='newStep'||e.target.id==='newNote')){ e.preventDefault(); $(e.target.id==='newStep'?'#addStep':'#addNote').click(); }
+    return;
+  }
+  if(e.key==='/'){ e.preventDefault(); $('#q').focus(); }
+});
+setInterval(()=>{ if(data){ render(); } }, 30000);   // освежаем «N минут назад»
+
+/* ---------- старт ---------- */
+(async()=>{
+  applyAuthUi();
+  if(location.hash==='#history') setView('history');
+  await fetchData();
+  const m = location.hash.match(/^#task-(\d+)$/); if(m && data) openTask(+m[1]);
+  schedule();
+})();
+</script>
+</body>
+</html>

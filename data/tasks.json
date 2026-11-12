@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "title": "Трекер задач",
+  "updated": "2026-11-12T01:07:34Z",
+  "next_id": 2,
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Сделать трекер задач на GitHub Pages",
+      "who": "Claude",
+      "project": "todo-tracker",
+      "tags": [
+        "setup"
+      ],
+      "status": "in_progress",
+      "steps": [
+        {
+          "text": "Доска и карточки задач",
+          "done": true
+        },
+        {
+          "text": "Вкладка История",
+          "done": true
+        },
+        {
+          "text": "Скрипт tracker.py",
+          "done": true
+        },
+        {
+          "text": "Публикация на GitHub Pages",
+          "done": false
+        },
+        {
+          "text": "Скилл для обновлений",
+          "done": false
+        }
+      ],
+      "created": "2026-11-12T01:07:33Z",
+      "updated": "2026-11-12T01:07:34Z",
+      "started": "2026-11-12T01:07:33Z",
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T01:07:33Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-12T01:07:33Z",
+          "type": "started",
+          "text": "взял(а) в работу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-12T01:07:33Z",
+          "type": "step",
+          "text": "шаг 1/5 готов: Доска и карточки задач",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-12T01:07:33Z",
+          "type": "step",
+          "text": "шаг 2/5 готов: Вкладка История",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-12T01:07:33Z",
+          "type": "step",
+          "text": "шаг 3/5 готов: Скрипт tracker.py",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-12T01:07:34Z",
+          "type": "note",
+          "text": "доска, история и скрипт проверены в браузере; жду доступ к GitHub",
+          "by": "Claude"
+        }
+      ]
+    }
+  ]
+}
