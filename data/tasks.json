@@ -1,8 +1,8 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-12T07:31:46Z",
-  "next_id": 34,
+  "updated": "2026-11-12T07:35:40Z",
+  "next_id": 35,
   "tasks": [
     {
       "id": 1,
@@ -2256,6 +2256,56 @@
           "t": "2026-11-12T06:55:35Z",
           "type": "created",
           "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Сценарий «Выдали за однорукого»",
+      "who": "Claude",
+      "project": "деревня",
+      "tags": [
+        "сценарий"
+      ],
+      "status": "in_progress",
+      "steps": [
+        {
+          "text": "Главы 1–6",
+          "done": false
+        },
+        {
+          "text": "Главы 7–12",
+          "done": false
+        },
+        {
+          "text": "Главы 13–18",
+          "done": false
+        },
+        {
+          "text": "Главы 19–24",
+          "done": false
+        },
+        {
+          "text": "Проверка: тире, числа, дети",
+          "done": false
+        }
+      ],
+      "created": "2026-11-12T07:35:40Z",
+      "updated": "2026-11-12T07:35:40Z",
+      "started": "2026-11-12T07:35:40Z",
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T07:35:40Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-12T07:35:40Z",
+          "type": "started",
+          "text": "взял(а) в работу",
           "by": "Claude"
         }
       ]
