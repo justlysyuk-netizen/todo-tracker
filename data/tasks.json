@@ -1,8 +1,8 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-12T06:44:16Z",
-  "next_id": 4,
+  "updated": "2026-11-12T06:55:35Z",
+  "next_id": 34,
   "tasks": [
     {
       "id": 1,
@@ -140,7 +140,7 @@
         },
         {
           "text": "Сценарий и промпты по расписанию",
-          "done": false
+          "done": true
         },
         {
           "text": "Картинки через Fast Gen",
@@ -168,7 +168,7 @@
         }
       ],
       "created": "2026-11-12T05:02:43Z",
-      "updated": "2026-11-12T06:44:16Z",
+      "updated": "2026-11-12T06:55:35Z",
       "started": "2026-11-12T05:02:43Z",
       "finished": null,
       "log": [
@@ -279,6 +279,18 @@
           "type": "note",
           "text": "голос: Oliver Silk, реалистичный, скорость 0.90; монтаж: плавная камера, наплывы, паузы",
           "by": "Claude"
+        },
+        {
+          "t": "2026-11-12T06:55:35Z",
+          "type": "step",
+          "text": "шаг 3/9 готов: Сценарий и промпты по расписанию",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-12T06:55:35Z",
+          "type": "note",
+          "text": "контент-план на 30 дней утверждён и загружен в очередь",
+          "by": "Claude"
         }
       ]
     },
@@ -377,6 +389,1746 @@
           "t": "2026-11-12T06:20:41Z",
           "type": "done",
           "text": "готово: 15 заголовков (лучший 95/100), описание с 24 таймкодами, 23 тега, 2 закрепа, 6 обложек: https://claude.ai/artifact/Evo6nQQgUzQQ8fQXD5Brgi",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Что происходит с телом после 60, когда возвращается близость",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 1"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: БЛИЗОСТЬ ВЕРНУЛАСЬ\nОпора: Продолжение лидера канала «Без близости годами»: окситоцин, сосуды, сон, тревога; Lindau NEJM 2007",
+      "created": "2026-11-12T06:55:33Z",
+      "updated": "2026-11-12T06:55:33Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:33Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Не кальций: что на самом деле укрепляет кости после 60",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 2"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НЕ КАЛЬЦИЙ\nОпора: Bolland BMJ 2015 (кальций не снижает переломы), LIFTMOR Watson 2018 (тяжёлые упражнения повысили плотность костей)",
+      "created": "2026-11-12T06:55:33Z",
+      "updated": "2026-11-12T06:55:33Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:33Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Почему умение встать с пола без рук предсказывает, сколько вы проживёте",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 3"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: ВСТАТЬ БЕЗ РУК\nОпора: Brito 2014, тест сесть-встать с пола",
+      "created": "2026-11-12T06:55:33Z",
+      "updated": "2026-11-12T06:55:33Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:33Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Не судоку: что на самом деле защищает мозг после 60",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 4"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НЕ СУДОКУ\nОпора: Owen Nature 2010 (тренажёры для мозга без переноса), Erickson PNAS 2011 (ходьба увеличила гиппокамп на 2%)",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Почему вам нужно СИДЕТЬ НА ПЯТКАХ каждый день",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 5"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: СИДЕТЬ НА ПЯТКАХ\nОпора: Продолжение «сидеть на полу»: сгибание колена, голеностоп, подвижность",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Не крем: что на самом деле разглаживает кожу после 60",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 6"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НЕ КРЕМ\nОпора: Nishikori Sci Rep 2023: силовые упражнения утолстили дерму и повысили упругость",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Что будет, если 2 минуты в день сжимать кулак",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 7"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: СЖИМАТЬ КУЛАК\nОпора: Изометрический хват и давление; Edwards BJSM 2023",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Не протеиновый коктейль: что на самом деле кормит мышцы после 60",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 8"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НЕ КОКТЕЙЛЬ\nОпора: van Vliet AJCN 2017: целые яйца сильнее белков для синтеза мышц; цельная еда против изолята",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Почему вам нужно ХОДИТЬ НА ПЯТКАХ каждый день",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 9"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НА ПЯТКАХ\nОпора: Передняя большеберцовая мышца, подъём носка, спотыкания и падения",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Не диета: что на самом деле убирает живот после 60",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 10"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НЕ ДИЕТА\nОпора: Висцеральный жир уходит от упражнений даже без снижения веса (метаанализы Vissers 2013 и др.)",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Что прикосновения делают с телом после 50",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 11"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: КОЖНЫЙ ГОЛОД\nОпора: C-тактильные волокна (Löken 2009), окситоцин, кожный голод",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Не растяжка: что на самом деле возвращает гибкость после 60",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 12"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НЕ РАСТЯЖКА\nОпора: Afonso 2021: силовые в полной амплитуде не хуже растяжки",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Почему сила хватки предсказывает, сколько вы проживёте",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 13"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: ХВАТКА\nОпора: PURE, Leong Lancet 2015",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Не сила: что на самом деле уходит из ног после 60",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 14"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НЕ СИЛА\nОпора: Мощность падает быстрее силы; Reid и Fielding 2012",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Что будет, если 10 минут в день ходить по камешкам",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 15"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: ПО КАМНЯМ\nОпора: Li 2005 (дорожка из гальки: давление и равновесие), продолжение «босиком после 60»",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Не магний: что на самом деле убирает ночные судороги",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 16"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НЕ МАГНИЙ\nОпора: Кокрейн 2020 (магний не помогает при судорогах у пожилых), Hallegraeff 2012 (растяжка икр перед сном)",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Почему 10 секунд на одной ноге предсказывают, сколько вы проживёте",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 17"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НА ОДНОЙ НОГЕ\nОпора: Araujo BJSM 2022",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Не сладкое: что на самом деле поднимает сахар после 60",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 18"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НЕ СЛАДКОЕ\nОпора: Мышцы как главный потребитель глюкозы; Srikanthan 2011",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Что происходит с сердцем, если ходить в баню 4 раза в неделю",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 19"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: БАНЯ\nОпора: Laukkanen JAMA Intern Med 2015",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Не мелатонин: что на самом деле возвращает глубокий сон после 60",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 20"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НЕ МЕЛАТОНИН\nОпора: Haghayegh 2019: тёплая ванна за 1–2 часа до сна; терморегуляция и глубокий сон",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Что съесть утром, чтобы мышцы после 60 не таяли",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 21"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: ЗАВТРАК ДЛЯ МЫШЦ\nОпора: Mamerow 2014: распределение белка; пара к «что съесть на ночь»",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Не стельки: что на самом деле лечит стопы после 60",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 22"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НЕ СТЕЛЬКИ\nОпора: Ridge 2019: ходьба в минималистичной обуви усилила мышцы стопы на 57%",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Мышцы, о которых молчат: тазовое дно после 50",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 23"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: ТАЗОВОЕ ДНО\nОпора: Тазовое дно у мужчин и женщин: недержание, близость; Dorey 2005",
+      "created": "2026-11-12T06:55:34Z",
+      "updated": "2026-11-12T06:55:34Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Не кардио: что на самом деле бережёт сердце после 60",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 24"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НЕ КАРДИО\nОпора: Momma BJSM 2022: 30–60 минут силовых в неделю",
+      "created": "2026-11-12T06:55:35Z",
+      "updated": "2026-11-12T06:55:35Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:35Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Почему вам нужно СПУСКАТЬСЯ по лестнице каждый день",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 25"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: СПУСК\nОпора: Эксцентрическая нагрузка; LaStayo 2003",
+      "created": "2026-11-12T06:55:35Z",
+      "updated": "2026-11-12T06:55:35Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:35Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Не 8 часов: сколько на самом деле нужно спать после 60",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 26"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НЕ 8 ЧАСОВ\nОпора: Li Nature Aging 2022: 7 часов оптимум",
+      "created": "2026-11-12T06:55:35Z",
+      "updated": "2026-11-12T06:55:35Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:35Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Почему вид из окна лечит",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 27"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: СМОТРЕТЬ НА ДЕРЕВЬЯ\nОпора: Ulrich Science 1984; продолжение «трогать дерево»",
+      "created": "2026-11-12T06:55:35Z",
+      "updated": "2026-11-12T06:55:35Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:35Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Не глюкозамин: что на самом деле питает суставы после 60",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 28"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НЕ ГЛЮКОЗАМИН\nОпора: GAIT, NEJM 2006; хрящ питается движением",
+      "created": "2026-11-12T06:55:35Z",
+      "updated": "2026-11-12T06:55:35Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:35Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Что будет, если лежать на животе 5 минут в день",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 29"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: ЛЕЖАТЬ НА ЖИВОТЕ\nОпора: Продолжение «лежать на полу»: разгибание грудного отдела, поясница",
+      "created": "2026-11-12T06:55:35Z",
+      "updated": "2026-11-12T06:55:35Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:35Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Не кофе: что на самом деле бодрит утром после 60",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик",
+        "день 30"
+      ],
+      "status": "queue",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "desc": "Обложка: НЕ КОФЕ\nОпора: Утренний кортизол, свет, движение",
+      "created": "2026-11-12T06:55:35Z",
+      "updated": "2026-11-12T06:55:35Z",
+      "started": null,
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-12T06:55:35Z",
+          "type": "created",
+          "text": "создал(а) задачу",
           "by": "Claude"
         }
       ]
