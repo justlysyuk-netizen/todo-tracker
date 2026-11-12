@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-12T07:54:05Z",
+  "updated": "2026-11-12T07:54:44Z",
   "next_id": 35,
   "tasks": [
     {
@@ -420,7 +420,7 @@
         "ролик",
         "день 1"
       ],
-      "status": "in_progress",
+      "status": "done",
       "steps": [
         {
           "text": "Источники",
@@ -440,26 +440,26 @@
         },
         {
           "text": "Картинки",
-          "done": false
+          "done": true
         },
         {
           "text": "Озвучка",
-          "done": false
+          "done": true
         },
         {
           "text": "Монтаж",
-          "done": false
+          "done": true
         },
         {
           "text": "Проверка и публикация (Илья)",
-          "done": false
+          "done": true
         }
       ],
       "desc": "Обложка: БЛИЗОСТЬ ВЕРНУЛАСЬ\nОпора: Продолжение лидера канала «Без близости годами»: окситоцин, сосуды, сон, тревога; Lindau NEJM 2007",
       "created": "2026-11-12T06:55:33Z",
-      "updated": "2026-11-12T07:54:05Z",
+      "updated": "2026-11-12T07:54:44Z",
       "started": "2026-11-12T07:16:47Z",
-      "finished": null,
+      "finished": "2026-11-12T07:54:44Z",
       "log": [
         {
           "t": "2026-11-12T06:55:33Z",
@@ -634,9 +634,14 @@
           "type": "progress",
           "text": "прогресс 97%: монтаж 100%",
           "by": "Конвейер"
+        },
+        {
+          "t": "2026-11-12T07:54:44Z",
+          "type": "done",
+          "text": "готово: ролик готов: https://github.com/justlysyuk-netizen/video-factory/releases/tag/2026-11-11-blizost-vernulas",
+          "by": "Конвейер"
         }
-      ],
-      "progress": 97
+      ]
     },
     {
       "id": 5,
