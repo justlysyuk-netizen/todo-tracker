@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-12T01:12:46Z",
+  "updated": "2026-11-12T01:16:05Z",
   "next_id": 2,
   "tasks": [
     {
@@ -36,7 +36,7 @@
         }
       ],
       "created": "2026-11-12T01:07:33Z",
-      "updated": "2026-11-12T01:12:46Z",
+      "updated": "2026-11-12T01:16:05Z",
       "started": "2026-11-12T01:07:33Z",
       "finished": null,
       "log": [
@@ -86,6 +86,18 @@
           "t": "2026-11-12T01:12:46Z",
           "type": "note",
           "text": "код в репозитории, жду включения Pages",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-12T01:16:05Z",
+          "type": "step",
+          "text": "шаг 4/5 готов: Публикация на GitHub Pages",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-12T01:16:05Z",
+          "type": "note",
+          "text": "GitHub Pages включён",
           "by": "Claude"
         }
       ]
