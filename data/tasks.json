@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-12T22:41:20Z",
+  "updated": "2026-11-12T22:42:04Z",
   "next_id": 35,
   "tasks": [
     {
@@ -1156,7 +1156,7 @@
       "steps": [
         {
           "text": "Источники",
-          "done": false
+          "done": true
         },
         {
           "text": "Сценарий",
@@ -1189,7 +1189,7 @@
       ],
       "desc": "Обложка: НЕ СУДОКУ\nОпора: Owen Nature 2010 (тренажёры для мозга без переноса), Erickson PNAS 2011 (ходьба увеличила гиппокамп на 2%)",
       "created": "2026-11-12T06:55:34Z",
-      "updated": "2026-11-12T22:41:20Z",
+      "updated": "2026-11-12T22:42:04Z",
       "started": "2026-11-12T22:41:20Z",
       "finished": null,
       "log": [
@@ -1203,6 +1203,18 @@
           "t": "2026-11-12T22:41:20Z",
           "type": "started",
           "text": "взял(а) в работу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-12T22:42:04Z",
+          "type": "step",
+          "text": "шаг 1/8 готов: Источники",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-12T22:42:04Z",
+          "type": "note",
+          "text": "7 источников: Owen 2010, Erickson 2011, Ngandu 2015 FINGER, Park 2014, Lin 2023 ACHIEVE, Livingston 2024, Edwards 2017 ACTIVE",
           "by": "Claude"
         }
       ]
