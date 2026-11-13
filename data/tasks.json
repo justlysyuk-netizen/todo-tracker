@@ -1,8 +1,8 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-13T21:06:50Z",
-  "next_id": 37,
+  "updated": "2026-11-13T21:09:02Z",
+  "next_id": 38,
   "tasks": [
     {
       "id": 1,
@@ -3879,6 +3879,64 @@
         }
       ],
       "progress": 72
+    },
+    {
+      "id": 37,
+      "title": "ВЗЯЛ В ЖЁНЫ СЛЕПУЮ: ЖЕЛЕЗНАЯ ПЕЛЕНА",
+      "who": "Claude",
+      "project": "деревня",
+      "tags": [
+        "ролик"
+      ],
+      "status": "in_progress",
+      "steps": [
+        {
+          "text": "План и герои",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры",
+          "done": false
+        },
+        {
+          "text": "SEO и обложки",
+          "done": false
+        },
+        {
+          "text": "Картинки и озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "created": "2026-11-13T21:09:02Z",
+      "updated": "2026-11-13T21:09:02Z",
+      "started": "2026-11-13T21:09:02Z",
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-13T21:09:02Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-13T21:09:02Z",
+          "type": "started",
+          "text": "взял(а) в работу",
+          "by": "Claude"
+        }
+      ]
     }
   ]
 }
