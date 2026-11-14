@@ -1,8 +1,8 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-14T15:04:37Z",
-  "next_id": 43,
+  "updated": "2026-11-14T15:09:17Z",
+  "next_id": 44,
   "tasks": [
     {
       "id": 1,
@@ -7193,6 +7193,64 @@
           "t": "2026-11-14T14:22:54Z",
           "type": "note",
           "text": "3 ч 51 мин, компьютер недоступен, видео монтируется в релиз на GitHub",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "title": "ЗАОЧНАЯ НЕВЕСТА: ЖЕЛЕЗНАЯ ПЕЛЕНА",
+      "who": "Claude",
+      "project": "деревня",
+      "tags": [
+        "ролик"
+      ],
+      "status": "in_progress",
+      "steps": [
+        {
+          "text": "План и герои",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры",
+          "done": false
+        },
+        {
+          "text": "SEO и обложки",
+          "done": false
+        },
+        {
+          "text": "Картинки и озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "created": "2026-11-14T15:09:17Z",
+      "updated": "2026-11-14T15:09:17Z",
+      "started": "2026-11-14T15:09:17Z",
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-14T15:09:17Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-14T15:09:17Z",
+          "type": "started",
+          "text": "взял(а) в работу",
           "by": "Claude"
         }
       ]
