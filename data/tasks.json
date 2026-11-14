@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-14T13:35:27Z",
+  "updated": "2026-11-14T13:35:51Z",
   "next_id": 43,
   "tasks": [
     {
@@ -3512,7 +3512,7 @@
         "ролик",
         "день 13"
       ],
-      "status": "queue",
+      "status": "in_progress",
       "steps": [
         {
           "text": "Источники",
@@ -3549,14 +3549,20 @@
       ],
       "desc": "Обложка: ХВАТКА\nОпора: PURE, Leong Lancet 2015",
       "created": "2026-11-12T06:55:34Z",
-      "updated": "2026-11-12T06:55:34Z",
-      "started": null,
+      "updated": "2026-11-14T13:35:51Z",
+      "started": "2026-11-14T13:35:51Z",
       "finished": null,
       "log": [
         {
           "t": "2026-11-12T06:55:34Z",
           "type": "created",
           "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-14T13:35:51Z",
+          "type": "started",
+          "text": "взял(а) в работу",
           "by": "Claude"
         }
       ]
