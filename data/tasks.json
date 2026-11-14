@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-14T17:27:13Z",
+  "updated": "2026-11-14T17:35:22Z",
   "next_id": 44,
   "tasks": [
     {
@@ -4559,7 +4559,7 @@
         "ролик",
         "день 17"
       ],
-      "status": "queue",
+      "status": "in_progress",
       "steps": [
         {
           "text": "Источники",
@@ -4596,14 +4596,20 @@
       ],
       "desc": "Обложка: НА ОДНОЙ НОГЕ\nОпора: Araujo BJSM 2022",
       "created": "2026-11-12T06:55:34Z",
-      "updated": "2026-11-12T06:55:34Z",
-      "started": null,
+      "updated": "2026-11-14T17:35:22Z",
+      "started": "2026-11-14T17:35:22Z",
       "finished": null,
       "log": [
         {
           "t": "2026-11-12T06:55:34Z",
           "type": "created",
           "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-14T17:35:22Z",
+          "type": "started",
+          "text": "взял(а) в работу",
           "by": "Claude"
         }
       ]
