@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-15T21:04:46Z",
+  "updated": "2026-11-15T21:04:48Z",
   "next_id": 50,
   "tasks": [
     {
@@ -9724,7 +9724,7 @@
       "tags": [
         "сценарий"
       ],
-      "status": "in_progress",
+      "status": "blocked",
       "steps": [
         {
           "text": "Проверить источники",
@@ -9748,7 +9748,7 @@
         }
       ],
       "created": "2026-11-15T20:29:44Z",
-      "updated": "2026-11-15T21:04:46Z",
+      "updated": "2026-11-15T21:04:48Z",
       "started": "2026-11-15T20:29:44Z",
       "finished": null,
       "log": [
@@ -9804,6 +9804,12 @@
           "t": "2026-11-15T21:04:46Z",
           "type": "note",
           "text": "Doc: https://claude.ai/artifact/GnsTK9qLNdqdoajWYDSFmQ + txt для озвучки",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-15T21:04:48Z",
+          "type": "blocked",
+          "text": "заблокировано: Пример обложки от Ильи",
           "by": "Claude"
         }
       ]
