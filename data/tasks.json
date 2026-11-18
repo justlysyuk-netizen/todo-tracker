@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-18T22:42:10Z",
+  "updated": "2026-11-18T22:42:12Z",
   "next_id": 57,
   "tasks": [
     {
@@ -10882,7 +10882,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "in_progress",
+      "status": "queue",
       "steps": [
         {
           "text": "Источники",
@@ -10918,7 +10918,7 @@
         }
       ],
       "created": "2026-11-18T22:35:38Z",
-      "updated": "2026-11-18T22:42:10Z",
+      "updated": "2026-11-18T22:42:12Z",
       "started": "2026-11-18T22:35:38Z",
       "finished": null,
       "log": [
@@ -10980,6 +10980,12 @@
           "t": "2026-11-18T22:42:10Z",
           "type": "note",
           "text": "15 названий, 3 обложки по WRITER; vidIQ не проверял: на балансе 5 кредитов (<10)",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-18T22:42:12Z",
+          "type": "queued",
+          "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-18-spat-dnem",
           "by": "Claude"
         }
       ]
