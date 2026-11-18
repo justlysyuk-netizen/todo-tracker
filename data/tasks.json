@@ -1,8 +1,8 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-18T17:42:41Z",
-  "next_id": 52,
+  "updated": "2026-11-18T18:09:00Z",
+  "next_id": 53,
   "tasks": [
     {
       "id": 1,
@@ -10276,6 +10276,64 @@
           "t": "2026-11-18T17:01:57Z",
           "type": "queued",
           "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-18-vzyal-doch-policaya",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "title": "БРОШЕННАЯ У АЛТАРЯ: СЕЛО ПОМНИТ ВСЕ",
+      "who": "Claude",
+      "project": "деревня",
+      "tags": [
+        "ролик"
+      ],
+      "status": "in_progress",
+      "steps": [
+        {
+          "text": "План и герои",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры",
+          "done": false
+        },
+        {
+          "text": "SEO и обложки",
+          "done": false
+        },
+        {
+          "text": "Картинки и озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "created": "2026-11-18T18:09:00Z",
+      "updated": "2026-11-18T18:09:00Z",
+      "started": "2026-11-18T18:09:00Z",
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-18T18:09:00Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-18T18:09:00Z",
+          "type": "started",
+          "text": "взял(а) в работу",
           "by": "Claude"
         }
       ]
