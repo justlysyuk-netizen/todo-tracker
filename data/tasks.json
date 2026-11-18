@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-18T06:15:40Z",
+  "updated": "2026-11-18T06:15:42Z",
   "next_id": 50,
   "tasks": [
     {
@@ -9548,7 +9548,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "blocked",
+      "status": "queue",
       "steps": [
         {
           "text": "План и герои",
@@ -9580,7 +9580,7 @@
         }
       ],
       "created": "2026-11-15T03:08:10Z",
-      "updated": "2026-11-15T03:38:14Z",
+      "updated": "2026-11-18T06:15:42Z",
       "started": "2026-11-15T03:08:10Z",
       "finished": null,
       "log": [
@@ -9636,6 +9636,12 @@
           "t": "2026-11-15T03:38:14Z",
           "type": "blocked",
           "text": "заблокировано: сценарий готов и запушен (episodes/2026-11-15-za-chto-ne-lyubili/script.json), но GitHub Actions не запускает задачи: оплата/лимит расходов (Billing & plans). После починки перезапустить «Сделать ролик» run 43673155407",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-18T06:15:42Z",
+          "type": "queued",
+          "text": "вернул(а) в очередь: GitHub больше не нужен: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-15-za-chto-ne-lyubili (или --ready для всех)",
           "by": "Claude"
         }
       ]
