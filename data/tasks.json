@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-18T06:15:42Z",
+  "updated": "2026-11-18T06:15:44Z",
   "next_id": 50,
   "tasks": [
     {
@@ -9654,7 +9654,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "blocked",
+      "status": "queue",
       "steps": [
         {
           "text": "План и герои",
@@ -9686,7 +9686,7 @@
         }
       ],
       "created": "2026-11-15T06:09:24Z",
-      "updated": "2026-11-15T06:38:03Z",
+      "updated": "2026-11-18T06:15:44Z",
       "started": "2026-11-15T06:09:24Z",
       "finished": null,
       "log": [
@@ -9754,6 +9754,12 @@
           "t": "2026-11-15T06:38:03Z",
           "type": "blocked",
           "text": "заблокировано: GitHub Actions не запускается: счёт/лимит расходов GitHub (Billing & plans). Сценарий запушен, после оплаты перезапустить run 43686226860",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-18T06:15:44Z",
+          "type": "queued",
+          "text": "вернул(а) в очередь: GitHub больше не нужен: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-15-vzyal-vorovku (или --ready для всех)",
           "by": "Claude"
         }
       ]
