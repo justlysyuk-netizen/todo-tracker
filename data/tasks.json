@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-18T06:26:39Z",
+  "updated": "2026-11-18T06:26:42Z",
   "next_id": 51,
   "tasks": [
     {
@@ -9883,7 +9883,7 @@
         "ролик",
         "вне очереди"
       ],
-      "status": "in_progress",
+      "status": "blocked",
       "steps": [
         {
           "text": "Источники",
@@ -9919,7 +9919,7 @@
         }
       ],
       "created": "2026-11-18T06:23:40Z",
-      "updated": "2026-11-18T06:26:39Z",
+      "updated": "2026-11-18T06:26:42Z",
       "started": "2026-11-18T06:23:40Z",
       "finished": null,
       "log": [
@@ -9969,6 +9969,12 @@
           "t": "2026-11-18T06:26:39Z",
           "type": "note",
           "text": "173 кадра, 3 обложки (2 космос + 1 инфографика), SEO; vidIQ не тратил: 5 кредитов",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-18T06:26:42Z",
+          "type": "blocked",
+          "text": "заблокировано: Запустить сборку на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-18-vy-uzhe-zhili",
           "by": "Claude"
         }
       ]
