@@ -1,8 +1,8 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-18T19:41:37Z",
-  "next_id": 53,
+  "updated": "2026-11-18T20:35:43Z",
+  "next_id": 54,
   "tasks": [
     {
       "id": 1,
@@ -10508,6 +10508,68 @@
           "t": "2026-11-18T18:23:07Z",
           "type": "queued",
           "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-18-broshennaya-u-altarya",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "title": "Что одиночество делает с телом после 60",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик"
+      ],
+      "status": "in_progress",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "created": "2026-11-18T20:35:43Z",
+      "updated": "2026-11-18T20:35:43Z",
+      "started": "2026-11-18T20:35:43Z",
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-18T20:35:43Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-18T20:35:43Z",
+          "type": "started",
+          "text": "взял(а) в работу",
           "by": "Claude"
         }
       ]
