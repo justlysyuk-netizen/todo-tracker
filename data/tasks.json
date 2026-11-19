@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-19T01:48:36Z",
+  "updated": "2026-11-19T01:48:39Z",
   "next_id": 61,
   "tasks": [
     {
@@ -11372,7 +11372,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "in_progress",
+      "status": "queue",
       "steps": [
         {
           "text": "Источники",
@@ -11408,7 +11408,7 @@
         }
       ],
       "created": "2026-11-19T01:35:45Z",
-      "updated": "2026-11-19T01:48:36Z",
+      "updated": "2026-11-19T01:48:39Z",
       "started": "2026-11-19T01:35:45Z",
       "finished": null,
       "log": [
@@ -11470,6 +11470,12 @@
           "t": "2026-11-19T01:48:36Z",
           "type": "note",
           "text": "15 названий, 3 промпта обложек; vidIQ не проверял: на балансе 5 кредитов",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-19T01:48:39Z",
+          "type": "queued",
+          "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-19-pyat-raz-v-den",
           "by": "Claude"
         }
       ]
