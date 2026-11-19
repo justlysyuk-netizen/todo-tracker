@@ -1,8 +1,8 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-19T03:41:04Z",
-  "next_id": 64,
+  "updated": "2026-11-19T04:36:09Z",
+  "next_id": 65,
   "tasks": [
     {
       "id": 1,
@@ -11814,6 +11814,68 @@
           "t": "2026-11-19T03:41:04Z",
           "type": "queued",
           "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-19-koleni-ne-beg",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "title": "Почему совет ложиться в 22:00 бессмысленен",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик"
+      ],
+      "status": "in_progress",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "created": "2026-11-19T04:36:09Z",
+      "updated": "2026-11-19T04:36:09Z",
+      "started": "2026-11-19T04:36:09Z",
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-19T04:36:09Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-19T04:36:09Z",
+          "type": "started",
+          "text": "взял(а) в работу",
           "by": "Claude"
         }
       ]
