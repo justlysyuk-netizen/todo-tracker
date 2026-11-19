@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-19T06:23:51Z",
+  "updated": "2026-11-19T06:23:53Z",
   "next_id": 67,
   "tasks": [
     {
@@ -12022,7 +12022,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "in_progress",
+      "status": "queue",
       "steps": [
         {
           "text": "План и герои",
@@ -12054,7 +12054,7 @@
         }
       ],
       "created": "2026-11-19T06:09:08Z",
-      "updated": "2026-11-19T06:23:51Z",
+      "updated": "2026-11-19T06:23:53Z",
       "started": "2026-11-19T06:09:08Z",
       "finished": null,
       "log": [
@@ -12098,6 +12098,12 @@
           "t": "2026-11-19T06:23:51Z",
           "type": "note",
           "text": "26 глав, 268 сцен, 146 886 символов (~3,6 ч), 7 героев, 3 обложки, SEO",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-19T06:23:53Z",
+          "type": "queued",
+          "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-19-vzyal-iz-lagerya",
           "by": "Claude"
         }
       ]
