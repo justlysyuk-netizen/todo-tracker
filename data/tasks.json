@@ -1,8 +1,8 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-19T06:41:09Z",
-  "next_id": 68,
+  "updated": "2026-11-19T07:35:33Z",
+  "next_id": 69,
   "tasks": [
     {
       "id": 1,
@@ -12202,6 +12202,68 @@
           "t": "2026-11-19T06:41:09Z",
           "type": "queued",
           "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-19-pisat-rukoy",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "title": "Что будет, если 3 минуты в день дышать медленно",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик"
+      ],
+      "status": "in_progress",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "created": "2026-11-19T07:35:33Z",
+      "updated": "2026-11-19T07:35:33Z",
+      "started": "2026-11-19T07:35:33Z",
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-19T07:35:33Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-19T07:35:33Z",
+          "type": "started",
+          "text": "взял(а) в работу",
           "by": "Claude"
         }
       ]
