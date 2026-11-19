@@ -1,8 +1,8 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-19T00:13:56Z",
-  "next_id": 59,
+  "updated": "2026-11-19T00:36:05Z",
+  "next_id": 60,
   "tasks": [
     {
       "id": 1,
@@ -11178,6 +11178,68 @@
           "t": "2026-11-19T00:13:56Z",
           "type": "note",
           "text": "26 глав, 7 героев, 1913–1915 Липовка; тема 2026-11-19-vzyal-ryabuyu",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "title": "Почему вам нужно ПОЛЗАТЬ каждый день",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик"
+      ],
+      "status": "in_progress",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "created": "2026-11-19T00:36:05Z",
+      "updated": "2026-11-19T00:36:05Z",
+      "started": "2026-11-19T00:36:05Z",
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-19T00:36:05Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-19T00:36:05Z",
+          "type": "started",
+          "text": "взял(а) в работу",
           "by": "Claude"
         }
       ]
