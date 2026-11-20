@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-20T03:36:36Z",
+  "updated": "2026-11-20T03:36:38Z",
   "next_id": 82,
   "tasks": [
     {
@@ -13717,7 +13717,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "in_progress",
+      "status": "queue",
       "steps": [
         {
           "text": "План и герои",
@@ -13749,7 +13749,7 @@
         }
       ],
       "created": "2026-11-20T03:09:16Z",
-      "updated": "2026-11-20T03:36:36Z",
+      "updated": "2026-11-20T03:36:38Z",
       "started": "2026-11-20T03:09:16Z",
       "finished": null,
       "log": [
@@ -13799,6 +13799,12 @@
           "t": "2026-11-20T03:36:36Z",
           "type": "note",
           "text": "28 глав, 145 558 символов (~3 ч 34 мин), 316 кадров, 3 обложки и SEO в meta.json",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T03:36:38Z",
+          "type": "queued",
+          "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-20-vzyal-obgorevshuyu",
           "by": "Claude"
         }
       ]
