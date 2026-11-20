@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-20T08:08:35Z",
+  "updated": "2026-11-20T08:08:39Z",
   "next_id": 85,
   "tasks": [
     {
@@ -10196,7 +10196,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "queue",
+      "status": "in_progress",
       "steps": [
         {
           "text": "План и герои",
@@ -10228,7 +10228,7 @@
         }
       ],
       "created": "2026-11-15T06:09:24Z",
-      "updated": "2026-11-18T06:15:44Z",
+      "updated": "2026-11-20T08:08:39Z",
       "started": "2026-11-15T06:09:24Z",
       "finished": null,
       "log": [
@@ -10303,8 +10303,15 @@
           "type": "queued",
           "text": "вернул(а) в очередь: GitHub больше не нужен: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-15-vzyal-vorovku (или --ready для всех)",
           "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T08:08:39Z",
+          "type": "progress",
+          "text": "прогресс 13%: картинки 28 из 287",
+          "by": "Конвейер"
         }
-      ]
+      ],
+      "progress": 13
     },
     {
       "id": 49,
