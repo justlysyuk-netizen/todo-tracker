@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-20T12:12:14Z",
+  "updated": "2026-11-20T12:12:22Z",
   "next_id": 87,
   "tasks": [
     {
@@ -13109,7 +13109,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "queue",
+      "status": "in_progress",
       "steps": [
         {
           "text": "План и герои",
@@ -13141,7 +13141,7 @@
         }
       ],
       "created": "2026-11-19T09:09:02Z",
-      "updated": "2026-11-19T09:24:36Z",
+      "updated": "2026-11-20T12:12:22Z",
       "started": "2026-11-19T09:09:02Z",
       "finished": null,
       "log": [
@@ -13210,8 +13210,15 @@
           "type": "queued",
           "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-19-muzh-prodal-vas",
           "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T12:12:22Z",
+          "type": "progress",
+          "text": "прогресс 13%: картинки 27 из 278",
+          "by": "Конвейер"
         }
-      ]
+      ],
+      "progress": 13
     },
     {
       "id": 71,
