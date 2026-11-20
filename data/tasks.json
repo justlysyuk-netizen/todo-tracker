@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-20T00:44:07Z",
+  "updated": "2026-11-20T00:49:44Z",
   "next_id": 79,
   "tasks": [
     {
@@ -13328,15 +13328,15 @@
         },
         {
           "text": "Сценарий",
-          "done": false
+          "done": true
         },
         {
           "text": "Кадры и промпты",
-          "done": false
+          "done": true
         },
         {
           "text": "SEO и обложка",
-          "done": false
+          "done": true
         },
         {
           "text": "Картинки",
@@ -13356,7 +13356,7 @@
         }
       ],
       "created": "2026-11-20T00:43:58Z",
-      "updated": "2026-11-20T00:44:07Z",
+      "updated": "2026-11-20T00:49:44Z",
       "started": "2026-11-20T00:43:58Z",
       "finished": null,
       "log": [
@@ -13388,6 +13388,30 @@
           "t": "2026-11-20T00:44:07Z",
           "type": "note",
           "text": "Hamilton 2022, Morishima 2016, Hagger-Johnson 2016, Dunstan 2012, Kuipers 2007, Bey и Hamilton 2003, Johnson 1973",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T00:49:44Z",
+          "type": "step",
+          "text": "шаг 2/8 готов: Сценарий",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T00:49:44Z",
+          "type": "step",
+          "text": "шаг 3/8 готов: Кадры и промпты",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T00:49:44Z",
+          "type": "step",
+          "text": "шаг 4/8 готов: SEO и обложка",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T00:49:44Z",
+          "type": "note",
+          "text": "сценарий 29 759 знаков, 162 сцены, 17 разделов, check_script без ошибок; 3 обложки в стиле канала; vidIQ не проверял: на балансе 5 кредитов (меньше 10)",
           "by": "Claude"
         }
       ]
