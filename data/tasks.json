@@ -1,8 +1,8 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-20T00:49:46Z",
-  "next_id": 79,
+  "updated": "2026-11-20T01:38:45Z",
+  "next_id": 80,
   "tasks": [
     {
       "id": 1,
@@ -13418,6 +13418,68 @@
           "t": "2026-11-20T00:49:46Z",
           "type": "queued",
           "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-20-podnimat-pyatki-sidya",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "title": "Почему вам нужно ЧИСТИТЬ ЗУБЫ НА НОЧЬ каждый день",
+      "who": "Claude",
+      "project": "наука",
+      "tags": [
+        "ролик"
+      ],
+      "status": "in_progress",
+      "steps": [
+        {
+          "text": "Источники",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры и промпты",
+          "done": false
+        },
+        {
+          "text": "SEO и обложка",
+          "done": false
+        },
+        {
+          "text": "Картинки",
+          "done": false
+        },
+        {
+          "text": "Озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "created": "2026-11-20T01:38:45Z",
+      "updated": "2026-11-20T01:38:45Z",
+      "started": "2026-11-20T01:38:45Z",
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-20T01:38:45Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T01:38:45Z",
+          "type": "started",
+          "text": "взял(а) в работу",
           "by": "Claude"
         }
       ]
