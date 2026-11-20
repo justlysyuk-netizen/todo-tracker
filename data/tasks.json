@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-20T00:44:05Z",
+  "updated": "2026-11-20T00:44:07Z",
   "next_id": 79,
   "tasks": [
     {
@@ -13324,7 +13324,7 @@
       "steps": [
         {
           "text": "Источники",
-          "done": false
+          "done": true
         },
         {
           "text": "Сценарий",
@@ -13356,7 +13356,7 @@
         }
       ],
       "created": "2026-11-20T00:43:58Z",
-      "updated": "2026-11-20T00:44:05Z",
+      "updated": "2026-11-20T00:44:07Z",
       "started": "2026-11-20T00:43:58Z",
       "finished": null,
       "log": [
@@ -13376,6 +13376,18 @@
           "t": "2026-11-20T00:44:05Z",
           "type": "note",
           "text": "план пуст и резерв пуст, тему выбрал Claude 20.11.26: камбаловидная мышца, подъёмы пяток сидя",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T00:44:07Z",
+          "type": "step",
+          "text": "шаг 1/8 готов: Источники",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T00:44:07Z",
+          "type": "note",
+          "text": "Hamilton 2022, Morishima 2016, Hagger-Johnson 2016, Dunstan 2012, Kuipers 2007, Bey и Hamilton 2003, Johnson 1973",
           "by": "Claude"
         }
       ]
