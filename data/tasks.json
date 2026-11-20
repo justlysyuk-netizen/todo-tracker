@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-20T03:36:44Z",
+  "updated": "2026-11-20T03:38:57Z",
   "next_id": 83,
   "tasks": [
     {
@@ -13821,7 +13821,7 @@
       "steps": [
         {
           "text": "Источники",
-          "done": false
+          "done": true
         },
         {
           "text": "Сценарий",
@@ -13853,7 +13853,7 @@
         }
       ],
       "created": "2026-11-20T03:36:44Z",
-      "updated": "2026-11-20T03:36:44Z",
+      "updated": "2026-11-20T03:38:57Z",
       "started": "2026-11-20T03:36:44Z",
       "finished": null,
       "log": [
@@ -13867,6 +13867,18 @@
           "t": "2026-11-20T03:36:44Z",
           "type": "started",
           "text": "взял(а) в работу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T03:38:57Z",
+          "type": "step",
+          "text": "шаг 1/8 готов: Источники",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T03:38:57Z",
+          "type": "note",
+          "text": "9 первоисточников: Kramer 2019, Mubanga 2017, Taniguchi 2023, Friedmann 1980, Allen 2001, Odendaal 2003, Nagasawa 2015, Curl 2017, Pirruccio 2019",
           "by": "Claude"
         }
       ]
