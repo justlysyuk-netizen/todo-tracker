@@ -1,8 +1,8 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-19T22:43:11Z",
-  "next_id": 77,
+  "updated": "2026-11-20T00:09:34Z",
+  "next_id": 78,
   "tasks": [
     {
       "id": 1,
@@ -13196,6 +13196,64 @@
           "t": "2026-11-19T22:43:11Z",
           "type": "queued",
           "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-19-pet",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "title": "ВЗЯЛ В ЖЁНЫ НЯНЬКУ: СЕЛО ПОМНИТ ВСЕ",
+      "who": "Claude",
+      "project": "деревня",
+      "tags": [
+        "ролик"
+      ],
+      "status": "in_progress",
+      "steps": [
+        {
+          "text": "План и герои",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры",
+          "done": false
+        },
+        {
+          "text": "SEO и обложки",
+          "done": false
+        },
+        {
+          "text": "Картинки и озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "created": "2026-11-20T00:09:34Z",
+      "updated": "2026-11-20T00:09:34Z",
+      "started": "2026-11-20T00:09:34Z",
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-20T00:09:34Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T00:09:34Z",
+          "type": "started",
+          "text": "взял(а) в работу",
           "by": "Claude"
         }
       ]
