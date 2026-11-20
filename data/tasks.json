@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-20T10:01:49Z",
+  "updated": "2026-11-20T10:02:06Z",
   "next_id": 86,
   "tasks": [
     {
@@ -10706,7 +10706,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "queue",
+      "status": "in_progress",
       "steps": [
         {
           "text": "План и герои",
@@ -10738,7 +10738,7 @@
         }
       ],
       "created": "2026-11-18T18:09:00Z",
-      "updated": "2026-11-18T18:23:07Z",
+      "updated": "2026-11-20T10:02:06Z",
       "started": "2026-11-18T18:09:00Z",
       "finished": null,
       "log": [
@@ -10807,8 +10807,15 @@
           "type": "queued",
           "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-18-broshennaya-u-altarya",
           "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T10:02:06Z",
+          "type": "progress",
+          "text": "прогресс 13%: картинки 27 из 272",
+          "by": "Конвейер"
         }
-      ]
+      ],
+      "progress": 13
     },
     {
       "id": 53,
