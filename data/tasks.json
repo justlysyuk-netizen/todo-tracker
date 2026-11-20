@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-20T14:16:42Z",
+  "updated": "2026-11-20T14:18:18Z",
   "next_id": 87,
   "tasks": [
     {
@@ -13965,7 +13965,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "queue",
+      "status": "in_progress",
       "steps": [
         {
           "text": "План и герои",
@@ -13997,7 +13997,7 @@
         }
       ],
       "created": "2026-11-19T21:08:51Z",
-      "updated": "2026-11-19T21:34:14Z",
+      "updated": "2026-11-20T14:18:18Z",
       "started": "2026-11-19T21:08:51Z",
       "finished": null,
       "log": [
@@ -14066,8 +14066,15 @@
           "type": "queued",
           "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-19-vernulas-s-togo-sveta",
           "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T14:18:18Z",
+          "type": "progress",
+          "text": "прогресс 13%: картинки 30 из 304",
+          "by": "Конвейер"
         }
-      ]
+      ],
+      "progress": 13
     },
     {
       "id": 76,
