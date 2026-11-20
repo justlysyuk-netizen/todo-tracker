@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-20T15:25:47Z",
+  "updated": "2026-11-20T15:25:50Z",
   "next_id": 88,
   "tasks": [
     {
@@ -15598,7 +15598,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "in_progress",
+      "status": "queue",
       "steps": [
         {
           "text": "План и герои",
@@ -15630,7 +15630,7 @@
         }
       ],
       "created": "2026-11-20T15:10:09Z",
-      "updated": "2026-11-20T15:25:47Z",
+      "updated": "2026-11-20T15:25:50Z",
       "started": "2026-11-20T15:10:09Z",
       "finished": null,
       "log": [
@@ -15692,6 +15692,12 @@
           "t": "2026-11-20T15:25:47Z",
           "type": "note",
           "text": "15 названий, описание, 22 тега, 3 промпта обложек",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T15:25:50Z",
+          "type": "queued",
+          "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-20-vzyal-popovnu",
           "by": "Claude"
         }
       ]
