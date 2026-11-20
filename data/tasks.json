@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-20T14:06:32Z",
+  "updated": "2026-11-20T14:07:30Z",
   "next_id": 87,
   "tasks": [
     {
@@ -13780,7 +13780,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "queue",
+      "status": "in_progress",
       "steps": [
         {
           "text": "План и герои",
@@ -13812,7 +13812,7 @@
         }
       ],
       "created": "2026-11-19T18:08:43Z",
-      "updated": "2026-11-19T18:37:12Z",
+      "updated": "2026-11-20T14:07:30Z",
       "started": "2026-11-19T18:08:43Z",
       "finished": null,
       "log": [
@@ -13881,8 +13881,15 @@
           "type": "queued",
           "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-19-vzyal-otravitelnicu",
           "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T14:07:30Z",
+          "type": "progress",
+          "text": "прогресс 13%: картинки 29 из 292",
+          "by": "Конвейер"
         }
-      ]
+      ],
+      "progress": 13
     },
     {
       "id": 75,
