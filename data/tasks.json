@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-20T04:41:49Z",
+  "updated": "2026-11-20T04:41:51Z",
   "next_id": 84,
   "tasks": [
     {
@@ -13938,7 +13938,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "in_progress",
+      "status": "queue",
       "steps": [
         {
           "text": "Источники",
@@ -13974,7 +13974,7 @@
         }
       ],
       "created": "2026-11-20T04:35:59Z",
-      "updated": "2026-11-20T04:41:49Z",
+      "updated": "2026-11-20T04:41:51Z",
       "started": "2026-11-20T04:35:59Z",
       "finished": null,
       "log": [
@@ -14042,6 +14042,12 @@
           "t": "2026-11-20T04:41:49Z",
           "type": "note",
           "text": "15 названий, 3 обложки; vidIQ не проверял: на балансе 5 кредитов (<10)",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T04:41:51Z",
+          "type": "queued",
+          "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-20-proverit-sluh",
           "by": "Claude"
         }
       ]
