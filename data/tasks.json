@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-20T07:18:32Z",
+  "updated": "2026-11-20T07:20:25Z",
   "next_id": 85,
   "tasks": [
     {
@@ -14078,7 +14078,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "queue",
+      "status": "in_progress",
       "steps": [
         {
           "text": "План и герои",
@@ -14110,7 +14110,7 @@
         }
       ],
       "created": "2026-11-20T06:09:22Z",
-      "updated": "2026-11-20T06:37:58Z",
+      "updated": "2026-11-20T07:20:25Z",
       "started": "2026-11-20T06:09:22Z",
       "finished": null,
       "log": [
@@ -14179,8 +14179,15 @@
           "type": "queued",
           "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-20-vzyal-vdovu-druga",
           "by": "Claude"
+        },
+        {
+          "t": "2026-11-20T07:20:25Z",
+          "type": "progress",
+          "text": "прогресс 13%: картинки 28 из 282",
+          "by": "Конвейер"
         }
-      ]
+      ],
+      "progress": 13
     }
   ]
 }
