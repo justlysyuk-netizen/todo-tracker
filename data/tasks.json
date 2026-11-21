@@ -1,8 +1,8 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-21T00:36:39Z",
-  "next_id": 91,
+  "updated": "2026-11-21T03:08:25Z",
+  "next_id": 92,
   "tasks": [
     {
       "id": 1,
@@ -16034,6 +16034,64 @@
           "t": "2026-11-21T00:36:39Z",
           "type": "queued",
           "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-21-vzyal-bezhenku",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "title": "ВЗЯЛ В ЖЁНЫ БОГАТУЮ ВДОВУ: ЖЕЛЕЗНАЯ ПЕЛЕНА",
+      "who": "Claude",
+      "project": "деревня",
+      "tags": [
+        "ролик"
+      ],
+      "status": "in_progress",
+      "steps": [
+        {
+          "text": "План и герои",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры",
+          "done": false
+        },
+        {
+          "text": "SEO и обложки",
+          "done": false
+        },
+        {
+          "text": "Картинки и озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "created": "2026-11-21T03:08:25Z",
+      "updated": "2026-11-21T03:08:25Z",
+      "started": "2026-11-21T03:08:25Z",
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-21T03:08:25Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-21T03:08:25Z",
+          "type": "started",
+          "text": "взял(а) в работу",
           "by": "Claude"
         }
       ]
