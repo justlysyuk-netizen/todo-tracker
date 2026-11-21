@@ -1,8 +1,8 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-21T12:23:22Z",
-  "next_id": 95,
+  "updated": "2026-11-21T15:09:20Z",
+  "next_id": 96,
   "tasks": [
     {
       "id": 1,
@@ -16482,6 +16482,64 @@
           "t": "2026-11-21T12:23:22Z",
           "type": "queued",
           "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-21-vzyal-gluhuyu",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "title": "ОТКАЗАЛАСЬ МАТЬ: ЖЕЛЕЗНАЯ ПЕЛЕНА",
+      "who": "Claude",
+      "project": "деревня",
+      "tags": [
+        "ролик"
+      ],
+      "status": "in_progress",
+      "steps": [
+        {
+          "text": "План и герои",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры",
+          "done": false
+        },
+        {
+          "text": "SEO и обложки",
+          "done": false
+        },
+        {
+          "text": "Картинки и озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "created": "2026-11-21T15:09:20Z",
+      "updated": "2026-11-21T15:09:20Z",
+      "started": "2026-11-21T15:09:20Z",
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-21T15:09:20Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-21T15:09:20Z",
+          "type": "started",
+          "text": "взял(а) в работу",
           "by": "Claude"
         }
       ]
