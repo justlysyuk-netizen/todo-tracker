@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-22T06:37:00Z",
+  "updated": "2026-11-22T06:37:02Z",
   "next_id": 101,
   "tasks": [
     {
@@ -17042,7 +17042,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "in_progress",
+      "status": "queue",
       "steps": [
         {
           "text": "План и герои",
@@ -17074,7 +17074,7 @@
         }
       ],
       "created": "2026-11-22T06:09:34Z",
-      "updated": "2026-11-22T06:37:00Z",
+      "updated": "2026-11-22T06:37:02Z",
       "started": "2026-11-22T06:09:34Z",
       "finished": null,
       "log": [
@@ -17136,6 +17136,12 @@
           "t": "2026-11-22T06:37:00Z",
           "type": "note",
           "text": "15 названий, описание, теги, 3 промпта обложек",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-22T06:37:02Z",
+          "type": "queued",
+          "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-22-vzyal-hromuyu",
           "by": "Claude"
         }
       ]
