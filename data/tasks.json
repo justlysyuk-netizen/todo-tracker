@@ -1,8 +1,8 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-25T06:37:43Z",
-  "next_id": 106,
+  "updated": "2026-11-25T09:09:41Z",
+  "next_id": 107,
   "tasks": [
     {
       "id": 1,
@@ -17660,6 +17660,64 @@
           "t": "2026-11-25T06:37:43Z",
           "type": "queued",
           "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-25-otets-prodal-za-dolg",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "title": "ВЗЯЛ В ЖЁНЫ ПОЧТАЛЬОНКУ: СЕЛО ПОМНИТ ВСЕ",
+      "who": "Claude",
+      "project": "деревня",
+      "tags": [
+        "ролик"
+      ],
+      "status": "in_progress",
+      "steps": [
+        {
+          "text": "План и герои",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры",
+          "done": false
+        },
+        {
+          "text": "SEO и обложки",
+          "done": false
+        },
+        {
+          "text": "Картинки и озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "created": "2026-11-25T09:09:41Z",
+      "updated": "2026-11-25T09:09:41Z",
+      "started": "2026-11-25T09:09:41Z",
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-25T09:09:41Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-25T09:09:41Z",
+          "type": "started",
+          "text": "взял(а) в работу",
           "by": "Claude"
         }
       ]
