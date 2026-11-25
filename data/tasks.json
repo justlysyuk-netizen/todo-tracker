@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-25T06:37:41Z",
+  "updated": "2026-11-25T06:37:43Z",
   "next_id": 106,
   "tasks": [
     {
@@ -17572,7 +17572,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "in_progress",
+      "status": "queue",
       "steps": [
         {
           "text": "План и герои",
@@ -17604,7 +17604,7 @@
         }
       ],
       "created": "2026-11-25T06:09:19Z",
-      "updated": "2026-11-25T06:37:41Z",
+      "updated": "2026-11-25T06:37:43Z",
       "started": "2026-11-25T06:09:19Z",
       "finished": null,
       "log": [
@@ -17654,6 +17654,12 @@
           "t": "2026-11-25T06:37:41Z",
           "type": "note",
           "text": "145 тыс. символов, 291 сцена, 26 глав, check_script без ошибок",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-25T06:37:43Z",
+          "type": "queued",
+          "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-25-otets-prodal-za-dolg",
           "by": "Claude"
         }
       ]
