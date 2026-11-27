@@ -1,8 +1,8 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-26T23:11:28Z",
-  "next_id": 109,
+  "updated": "2026-11-27T00:09:29Z",
+  "next_id": 110,
   "tasks": [
     {
       "id": 1,
@@ -17972,6 +17972,64 @@
           "t": "2026-11-26T23:11:28Z",
           "type": "queued",
           "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-26-vzyal-podkidysha",
+          "by": "Claude"
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "title": "ОНА ВЫКУПИЛА ЖЕНИХА: ЖЕЛЕЗНАЯ ПЕЛЕНА",
+      "who": "Claude",
+      "project": "деревня",
+      "tags": [
+        "ролик"
+      ],
+      "status": "in_progress",
+      "steps": [
+        {
+          "text": "План и герои",
+          "done": false
+        },
+        {
+          "text": "Сценарий",
+          "done": false
+        },
+        {
+          "text": "Кадры",
+          "done": false
+        },
+        {
+          "text": "SEO и обложки",
+          "done": false
+        },
+        {
+          "text": "Картинки и озвучка",
+          "done": false
+        },
+        {
+          "text": "Монтаж",
+          "done": false
+        },
+        {
+          "text": "Проверка и публикация (Илья)",
+          "done": false
+        }
+      ],
+      "created": "2026-11-27T00:09:29Z",
+      "updated": "2026-11-27T00:09:29Z",
+      "started": "2026-11-27T00:09:29Z",
+      "finished": null,
+      "log": [
+        {
+          "t": "2026-11-27T00:09:29Z",
+          "type": "created",
+          "text": "создал(а) задачу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-27T00:09:29Z",
+          "type": "started",
+          "text": "взял(а) в работу",
           "by": "Claude"
         }
       ]
