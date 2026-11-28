@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-28T08:38:04Z",
+  "updated": "2026-11-28T08:38:06Z",
   "next_id": 116,
   "tasks": [
     {
@@ -18596,7 +18596,7 @@
       "tags": [
         "ролик"
       ],
-      "status": "in_progress",
+      "status": "queue",
       "steps": [
         {
           "text": "Источники",
@@ -18632,7 +18632,7 @@
         }
       ],
       "created": "2026-11-28T08:33:11Z",
-      "updated": "2026-11-28T08:38:04Z",
+      "updated": "2026-11-28T08:38:06Z",
       "started": "2026-11-28T08:33:11Z",
       "finished": null,
       "log": [
@@ -18682,6 +18682,12 @@
           "t": "2026-11-28T08:38:04Z",
           "type": "note",
           "text": "184 сцены, 26 450 символов, 3 обложки, SEO; vidIQ не проверял: 0 кредитов",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-28T08:38:06Z",
+          "type": "queued",
+          "text": "вернул(а) в очередь: сценарий готов, сборка на ПК: .venv\\Scripts\\python tools\\make_local.py 2026-11-28-utrom-v-posteli",
           "by": "Claude"
         }
       ]
