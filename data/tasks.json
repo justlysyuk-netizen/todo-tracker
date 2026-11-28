@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Трекер задач",
-  "updated": "2026-11-28T08:33:11Z",
+  "updated": "2026-11-28T08:33:27Z",
   "next_id": 116,
   "tasks": [
     {
@@ -18600,7 +18600,7 @@
       "steps": [
         {
           "text": "Источники",
-          "done": false
+          "done": true
         },
         {
           "text": "Сценарий",
@@ -18632,7 +18632,7 @@
         }
       ],
       "created": "2026-11-28T08:33:11Z",
-      "updated": "2026-11-28T08:33:11Z",
+      "updated": "2026-11-28T08:33:27Z",
       "started": "2026-11-28T08:33:11Z",
       "finished": null,
       "log": [
@@ -18646,6 +18646,18 @@
           "t": "2026-11-28T08:33:11Z",
           "type": "started",
           "text": "взял(а) в работу",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-28T08:33:27Z",
+          "type": "step",
+          "text": "шаг 1/8 готов: Источники",
+          "by": "Claude"
+        },
+        {
+          "t": "2026-11-28T08:33:27Z",
+          "type": "note",
+          "text": "7 первоисточников: Snook 1998, Adams 1987, Wilke 1999, Langevin 2011, Stecco 2011, Wilke 2016, Skarpsno 2017",
           "by": "Claude"
         }
       ]
